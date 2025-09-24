@@ -12,10 +12,10 @@ const Header = () => {
 
   const mainNavItems = [
     { name: 'Acasă', path: '/' },
+    { name: 'Inventar', path: '/inventar' },
+    { name: 'Știri', path: '/stiri' },
     { name: 'Despre Noi', path: '/despre' },
-    { name: 'Produse', path: '/produse' },
-    { name: 'Second-Hand', path: '/second-hand' },
-    { name: 'Testimoniale', path: '/testimoniale' },
+    { name: 'Locuri de Muncă', path: '/cariere' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -52,22 +52,70 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            {mainNavItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`text-foreground hover:text-primary transition-colors font-medium relative ${
-                  isActive(item.path) 
-                    ? 'text-primary after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-primary' 
-                    : ''
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
+          {/* Main Navigation Menu - Identical to Original */}
+          <div className="hidden lg:flex bg-primary text-primary-foreground py-3">
+            <div className="container mx-auto px-4">
+              <nav className="flex items-center space-x-8">
+                <div className="relative group">
+                  <button className="flex items-center space-x-1 hover:text-secondary transition-colors">
+                    <span>UTILAJE AGRICOLE</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div className="relative group">
+                  <button className="flex items-center space-x-1 hover:text-secondary transition-colors">
+                    <span>TRACTOARE</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div className="relative group">
+                  <button className="flex items-center space-x-1 hover:text-secondary transition-colors">
+                    <span>REMORCI AGRICOLE</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div className="relative group">
+                  <button className="flex items-center space-x-1 hover:text-secondary transition-colors">
+                    <span>UTILAJE CONSTRUCȚII</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div className="relative group">
+                  <button className="flex items-center space-x-1 hover:text-secondary transition-colors">
+                    <span>STIVUITOARE & LOGISTICĂ</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div className="relative group">
+                  <button className="flex items-center space-x-1 hover:text-secondary transition-colors">
+                    <span>ALIMENTARE</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+
+                <Button size="sm" className="bg-secondary hover:bg-secondary-hover text-secondary-foreground ml-auto">
+                  BRANDURI
+                </Button>
+              </nav>
+            </div>
+          </div>
 
           {/* Search and CTA */}
           <div className="hidden lg:flex items-center space-x-4">

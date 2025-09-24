@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import SecondHand from "./pages/SecondHand";
+import AgriculturalMachinery from "./pages/AgriculturalMachinery";
+import Inventory from "./pages/Inventory";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +27,8 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/despre" element={<About />} />
               <Route path="/second-hand" element={<SecondHand />} />
+              <Route path="/utilaje-agricole" element={<AgriculturalMachinery />} />
+              <Route path="/inventar" element={<Inventory />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
