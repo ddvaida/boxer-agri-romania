@@ -95,8 +95,8 @@ const SecondHand = () => {
   const filteredTractors = tractors.filter(tractor => {
     const matchesSearch = tractor.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          tractor.model.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesBrand = !selectedBrand || tractor.brand === selectedBrand;
-    const matchesPower = !selectedPowerRange || 
+    const matchesBrand = !selectedBrand || selectedBrand === 'all-brands' || tractor.brand === selectedBrand;
+    const matchesPower = !selectedPowerRange || selectedPowerRange === 'all-power' || 
                         (selectedPowerRange === "60-80 CP" && parseInt(tractor.power) >= 60 && parseInt(tractor.power) <= 80) ||
                         (selectedPowerRange === "80-100 CP" && parseInt(tractor.power) >= 80 && parseInt(tractor.power) <= 100) ||
                         (selectedPowerRange === "100-120 CP" && parseInt(tractor.power) >= 100 && parseInt(tractor.power) <= 120) ||
@@ -198,7 +198,7 @@ const SecondHand = () => {
                       <SelectValue placeholder="Toate brandurile" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">Toate brandurile</SelectItem>
+                      <SelectItem value="all-brands">Toate brandurile</SelectItem>
                       {brands.map(brand => (
                         <SelectItem key={brand} value={brand}>{brand}</SelectItem>
                       ))}
@@ -212,7 +212,7 @@ const SecondHand = () => {
                       <SelectValue placeholder="Toate puterile" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">Toate puterile</SelectItem>
+                      <SelectItem value="all-power">Toate puterile</SelectItem>
                       {powerRanges.map(range => (
                         <SelectItem key={range} value={range}>{range}</SelectItem>
                       ))}
@@ -316,8 +316,8 @@ const SecondHand = () => {
               </p>
               <Button onClick={() => {
                 setSearchTerm('');
-                setSelectedBrand('');
-                setPowerRange('');
+                setSelectedBrand('all-brands');
+                setPowerRange('all-power');
               }}>
                 Resetează Filtrele
               </Button>
