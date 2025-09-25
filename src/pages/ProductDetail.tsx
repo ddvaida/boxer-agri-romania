@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ArrowLeft, ArrowRight, Heart, Share2, Download, Phone, Mail, MapPin } from 'lucide-react';
-import { getProductById } from '@/data/products';
+import { getProductById } from '@/data/allProducts';
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();

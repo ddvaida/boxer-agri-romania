@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import SecondHand from "./pages/SecondHand";
 import AgriculturalMachinery from "./pages/AgriculturalMachinery";
+import GrasslandCultivation from "./pages/GrasslandCultivation";
 import Inventory from "./pages/Inventory";
 import Tractors from "./pages/Tractors";
 import ProductDetail from "./pages/ProductDetail";
@@ -30,6 +31,7 @@ const App = () => (
               <Route path="/despre" element={<About />} />
               <Route path="/second-hand" element={<SecondHand />} />
               <Route path="/utilaje-agricole" element={<AgriculturalMachinery />} />
+              <Route path="/utilaje-agricole/cultivarea-pajistilor" element={<GrasslandCultivation />} />
               <Route path="/inventar" element={<Inventory />} />
               <Route path="/tractoare" element={<Tractors />} />
               <Route path="/tractoare/:id" element={<ProductDetail />} />
