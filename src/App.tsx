@@ -10,6 +10,8 @@ import About from "./pages/About";
 import SecondHand from "./pages/SecondHand";
 import AgriculturalMachinery from "./pages/AgriculturalMachinery";
 import Inventory from "./pages/Inventory";
+import Tractors from "./pages/Tractors";
+import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +31,10 @@ const App = () => (
               <Route path="/second-hand" element={<SecondHand />} />
               <Route path="/utilaje-agricole" element={<AgriculturalMachinery />} />
               <Route path="/inventar" element={<Inventory />} />
+              <Route path="/tractoare" element={<Tractors />} />
+              <Route path="/tractoare/:id" element={<ProductDetail />} />
+              <Route path="/utilaje-agricole/:category/:id" element={<ProductDetail />} />
+              <Route path="/utilaje-constructii/:category/:id" element={<ProductDetail />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
