@@ -32,63 +32,187 @@ export interface DetailedProduct {
 
 // CULTIVAREA PAJIȘTILOR - Grassland Cultivation Products
 export const grasslandCultivationProducts: DetailedProduct[] = [
-  // COSITORI CU BRAȚ - ARM MOWERS
+  // COSITORI CU BRAȚ AGF SERIES - ARM MOWERS
   {
-    id: 'boxer-am120',
-    name: 'Boxer AM120 Cositor cu Braț',
-    nameEn: 'Boxer AM120 Arm Mower',
-    description: 'Cositor cu braț hydraulic de 1.2m, ideal pentru tunderea vegetației pe marginile drumurilor și în zone greu accesibile',
+    id: 'boxer-agf120',
+    name: 'Boxer AGF120 Cositor cu Braț',
+    nameEn: 'Boxer AGF120 Arm Mower',
+    description: 'Cositor cu braț hydraulic profesional pentru întreținerea marginilor drumurilor, șanțurilor și zonelor greu accesibile. Echipat cu sistem de siguranță și control precis.',
     brand: 'Boxer',
     category: 'agricultural-machinery',
     subcategory: 'grassland-cultivation',
-    priceFrom: 5500,
-    priceRange: '5.500 - 6.200 EUR',
+    priceFrom: 4200,
+    priceRange: '4.200 - 4.800 EUR',
     specifications: {
       'Lățimea de lucru (cm)': 120,
-      'Diametrul maxim tăiat (mm)': 50,
-      'Înclinarea brațului (grade)': 90,
+      'Raza de acțiune (m)': 4.2,
+      'Unghiul de înclinare (grade)': 90,
+      'Diametrul maxim tăiat (mm)': 60,
+      'Greutate (kg)': 285
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+    features: [
+      'Braț hydraulic articulat cu 3 secțiuni',
+      'Sistem anti-rupere cu siguranțe',
+      'Control complet din cabina tractorului',
+      'Lame schimbabile rapid',
+      'Protecție împotriva pietrelor'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I',
+      'Presiune hidraulică (bar)': 180,
+      'Consum hidraulic (L/min)': 30
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'braț', 'hydraulic', 'margini'],
+    weight: 285
+  },
+
+  {
+    id: 'boxer-agf140',
+    name: 'Boxer AGF140 Cositor cu Braț',
+    nameEn: 'Boxer AGF140 Arm Mower',
+    description: 'Cositor cu braț de 140cm pentru lucrări intensive de întreținere a vegetației pe margini de drumuri și în zonele dificile.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 4650,
+    priceRange: '4.650 - 5.300 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 140,
       'Raza de acțiune (m)': 4.5,
-      'Greutate (kg)': 320
+      'Unghiul de înclinare (grade)': 90,
+      'Diametrul maxim tăiat (mm)': 70,
+      'Greutate (kg)': 310
     },
     images: [
       'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
     features: [
-      'Braț hydraulic articulat',
-      'Lame cu schimbare rapidă',
-      'Protecție anti-rupere',
-      'Control precis din cabină'
+      'Braț hydraulic robust',
+      'Lame din oțel călit',
+      'Sistem de siguranță avansat',
+      'Reglare precisă din cabină',
+      'Construcție rezistentă'
     ],
     technicalData: {
-      'Putere necesară (CP)': '35-50',
+      'Putere necesară (CP)': '40-60',
       'Viteză PTO (RPM)': 540,
-      'Tip atașare': 'Trei puncte',
-      'Material lamă': 'Oțel călit'
+      'Tip atașare': 'Trei puncte Cat I/II',
+      'Presiune hidraulică (bar)': 180,
+      'Consum hidraulic (L/min)': 35
     },
     availability: 'in-stock',
-    isFeatured: true,
-    tags: ['cositor', 'braț', 'margini'],
-    weight: 320
+    tags: ['cositor', 'braț', '140cm', 'professional'],
+    weight: 310
   },
-  
-  // COSITORI ROTATIVE - ROTARY MOWERS
+
   {
-    id: 'boxer-rm150',
-    name: 'Boxer RM150 Cositor Rotativ',
-    nameEn: 'Boxer RM150 Rotary Mower',
-    description: 'Cositor rotativ de 1.5m cu sistem de lamă dublă pentru tăiere uniformă a ierbii și vegetației fine',
+    id: 'boxer-agf180',
+    name: 'Boxer AGF180 Cositor cu Braț',
+    nameEn: 'Boxer AGF180 Arm Mower',
+    description: 'Cositor cu braț de mare capacitate pentru lucrări profesionale de întreținere a infrastructurii rutiere și a zonelor verzi.',
     brand: 'Boxer',
     category: 'agricultural-machinery',
     subcategory: 'grassland-cultivation',
-    priceFrom: 3200,
-    priceRange: '3.200 - 3.800 EUR',
+    priceFrom: 5800,
+    priceRange: '5.800 - 6.500 EUR',
     specifications: {
-      'Lățimea de lucru (cm)': 150,
-      'Numărul de lame': 4,
-      'Înălțimea de tăiere (mm)': '20-80',
-      'Viteză de lucru (km/h)': '8-12',
-      'Greutate (kg)': 280
+      'Lățimea de lucru (cm)': 180,
+      'Raza de acțiune (m)': 5.2,
+      'Unghiul de înclinare (grade)': 105,
+      'Diametrul maxim tăiat (mm)': 80,
+      'Greutate (kg)': 385
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+    features: [
+      'Braț hydraulic heavy-duty',
+      'Capacitate de tăiere superioară',
+      'Sistem de siguranță multiplu',
+      'Control electrohidraulic',
+      'Durabilitate extremă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '50-80',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II',
+      'Presiune hidraulică (bar)': 200,
+      'Consum hidraulic (L/min)': 45
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'braț', 'heavy-duty', 'profesional'],
+    weight: 385
+  },
+
+  {
+    id: 'boxer-agf220',
+    name: 'Boxer AGF220 Cositor cu Braț',
+    nameEn: 'Boxer AGF220 Arm Mower',
+    description: 'Cel mai mare cositor cu braț din gama Boxer, ideal pentru lucrări intensive la scară industrială și întreținerea autostrăzilor.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 7200,
+    priceRange: '7.200 - 8.200 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 220,
+      'Raza de acțiune (m)': 6.0,
+      'Unghiul de înclinare (grade)': 105,
+      'Diametrul maxim tăiat (mm)': 100,
+      'Greutate (kg)': 465
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+    features: [
+      'Braț hydraulic de mare capacitate',
+      'Sistem de tăiere industrial',
+      'Control computerizat',
+      'Protecție maximă',
+      'Eficiență superioară'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '60-100',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II/III',
+      'Presiune hidraulică (bar)': 220,
+      'Consum hidraulic (L/min)': 55
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'braț', 'industrial', 'autostrăzi'],
+    weight: 465
+  },
+
+  // COSITORI ROTATIVE NEX SERIES - ROTARY MOWERS
+  {
+    id: 'boxer-nex120',
+    name: 'Boxer NEX120 Cositor Rotativ',
+    nameEn: 'Boxer NEX120 Rotary Mower',
+    description: 'Cositor rotativ compact pentru întreținerea ierbii în parcuri, grădini și spații verzi mici cu sistem de lamă optimizat.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2800,
+    priceRange: '2.800 - 3.200 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Numărul de lame': 2,
+      'Înălțimea de tăiere (mm)': '25-80',
+      'Viteză de lucru (km/h)': '6-12',
+      'Greutate (kg)': 180
     },
     images: [
       'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
@@ -96,141 +220,314 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
     features: [
       'Sistem de lamă dublă',
-      'Înălțime de tăiere reglabilă',
-      'Construcție robustă',
-      'Mentenanță redusă'
+      'Înălțime reglabilă',
+      'Construcție compactă',
+      'Mentenanță simplă',
+      'Tăiere uniformă'
     ],
     technicalData: {
-      'Putere necesară (CP)': '25-35',
+      'Putere necesară (CP)': '18-30',
       'Viteză PTO (RPM)': 540,
-      'Tip atașare': 'Trei puncte',
-      'Sistem de siguranță': 'Cuplaj cu fricțiune'
+      'Tip atașare': 'Trei puncte Cat 0/I',
+      'Sistem siguranță': 'Cuplaj cu fricțiune',
+      'Lățime transport (m)': 1.3
     },
     availability: 'in-stock',
-    tags: ['cositor', 'rotativ', 'iarbă'],
-    weight: 280
+    tags: ['cositor', 'rotativ', 'compact', 'parcuri'],
+    weight: 180
   },
 
-  // COSITORI CU DISC - DISC MOWERS
   {
-    id: 'boxer-dm180',
-    name: 'Boxer DM180 Cositor cu Disc',
-    nameEn: 'Boxer DM180 Disc Mower',
-    description: 'Cositor cu disc de 1.8m pentru tăierea precisă a furajelor cu calitate superioară',
+    id: 'boxer-nex150',
+    name: 'Boxer NEX150 Cositor Rotativ',
+    nameEn: 'Boxer NEX150 Rotary Mower',
+    description: 'Cositor rotativ versatil de 1.5m pentru întreținerea profesională a spațiilor verzi și pajiștilor cu productivitate ridicată.',
     brand: 'Boxer',
     category: 'agricultural-machinery',
     subcategory: 'grassland-cultivation',
-    priceFrom: 8500,
-    priceRange: '8.500 - 9.200 EUR',
+    priceFrom: 3400,
+    priceRange: '3.400 - 3.900 EUR',
     specifications: {
-      'Lățimea de lucru (cm)': 180,
-      'Numărul de discuri': 6,
-      'Înălțimea de tăiere (mm)': '15-70',
-      'Viteză de lucru (km/h)': '12-18',
-      'Greutate (kg)': 450
-    },
-    images: [
-      'https://www.heustractors.com/uploads/media/product_list/04/1624-Vaia%20MB270-6R%20uitgeknipt-1.png?v=1-3'
-    ],
-    mainImage: 'https://www.heustractors.com/uploads/media/product_list/04/1624-Vaia%20MB270-6R%20uitgeknipt-1.png?v=1-3',
-    features: [
-      'Discuri cu cuțite rapide',
-      'Tăiere foarte precisă',
-      'Ideal pentru furaje',
-      'Sistem de suspensie'
-    ],
-    technicalData: {
-      'Putere necesară (CP)': '40-60',
-      'Viteză PTO (RPM)': 540,
-      'Tip atașare': 'Trei puncte',
-      'Lățimea de transport (m)': 2.1
-    },
-    availability: 'in-stock',
-    isFeatured: true,
-    tags: ['cositor', 'disc', 'furaje', 'precizie'],
-    weight: 450
-  }
-];
-
-// PRELUCRAREA SOLULUI - Soil Cultivation Products  
-export const soilCultivationProducts: DetailedProduct[] = [
-  // FREZE - ROTARY TILLERS
-  {
-    id: 'boxer-rt120',
-    name: 'Boxer RT120 Freză Rotativă',
-    nameEn: 'Boxer RT120 Rotary Tiller',
-    description: 'Freză rotativă de 1.2m pentru pregătirea solului cu sistem de cuțite performant',
-    brand: 'Boxer',
-    category: 'agricultural-machinery',
-    subcategory: 'soil-cultivation',
-    priceFrom: 2800,
-    priceRange: '2.800 - 3.400 EUR',
-    specifications: {
-      'Lățimea de lucru (cm)': 120,
-      'Numărul de cuțite': 24,
-      'Adâncimea de lucru (cm)': '15-25',
-      'Viteză de lucru (km/h)': '3-8',
-      'Greutate (kg)': 250
+      'Lățimea de lucru (cm)': 150,
+      'Numărul de lame': 3,
+      'Înălțimea de tăiere (mm)': '20-80',
+      'Viteză de lucru (km/h)': '8-15',
+      'Greutate (kg)': 220
     },
     images: [
       'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
     features: [
-      'Cuțite din oțel călit',
-      'Adâncime reglabilă',
-      'Construcție robustă',
-      'Pregătire perfectă sol'
+      'Sistem tri-lamă performant',
+      'Reglare precisă înălțime',
+      'Design aerodinamic',
+      'Distribuție uniformă',
+      'Rezistență superioară'
     ],
     technicalData: {
-      'Putere necesară (CP)': '20-35',
+      'Putere necesară (CP)': '25-40',
       'Viteză PTO (RPM)': 540,
-      'Tip atașare': 'Trei puncte',
-      'Tip transmisie': 'Lanț'
+      'Tip atașare': 'Trei puncte Cat I',
+      'Sistem siguranță': 'Bolt de siguranță',
+      'Lățime transport (m)': 1.6
     },
     availability: 'in-stock',
-    tags: ['freză', 'sol', 'pregătire'],
-    weight: 250
-  },
+    isFeatured: true,
+    tags: ['cositor', 'rotativ', '150cm', 'profesional'],
+    weight: 220
+  }
+];
 
-  // GRAPE ROTATIVE - ROTARY HARROWS
+// PRELUCRAREA SOLULUI - Soil Cultivation Products  
+export const soilCultivationProducts: DetailedProduct[] = [
+  // FREZE ROTATIVE - ROTARY TILLERS
   {
-    id: 'boxer-rh180',
-    name: 'Boxer RH180 Grapă Rotativă',
-    nameEn: 'Boxer RH180 Rotary Harrow',
-    description: 'Grapă rotativă de 1.8m pentru finisarea solului și pregătirea patului germinativ',
+    id: 'boxer-rt105',
+    name: 'Boxer RT105 Freză Rotativă',
+    nameEn: 'Boxer RT105 Rotary Tiller',
+    description: 'Freză rotativă compactă pentru pregătirea solului în grădini și sere cu sistem de cuțite durabil și eficient.',
     brand: 'Boxer',
     category: 'agricultural-machinery',
     subcategory: 'soil-cultivation',
-    priceFrom: 4200,
-    priceRange: '4.200 - 4.800 EUR',
+    priceFrom: 2200,
+    priceRange: '2.200 - 2.600 EUR',
     specifications: {
-      'Lățimea de lucru (cm)': 180,
-      'Numărul de secțiuni': 3,
-      'Adâncimea de lucru (cm)': '5-15',
-      'Viteză de lucru (km/h)': '8-15',
-      'Greutate (kg)': 380
+      'Lățimea de lucru (cm)': 105,
+      'Numărul de cuțite': 20,
+      'Adâncimea de lucru (cm)': '12-20',
+      'Viteză de lucru (km/h)': '3-6',
+      'Greutate (kg)': 165
     },
     images: [
       'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
     features: [
-      'Dinți din oțel rezistent',
-      'Reglare precisă adâncime',
-      'Finisare uniformă',
-      'Pliabilă pentru transport'
+      'Cuțite din oțel forjat',
+      'Adâncime reglabilă',
+      'Transmisie cu lanț',
+      'Construcție robustă',
+      'Mentenanță redusă'
     ],
     technicalData: {
-      'Putere necesară (CP)': '30-45',
-      'Tip atașare': 'Trei puncte',
-      'Lățimea de transport (m)': 2.5,
-      'Numărul de dinți': 54
+      'Putere necesară (CP)': '15-25',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0',
+      'Tip transmisie': 'Lanț duplex',
+      'Număr viteze': 1
+    },
+    availability: 'in-stock',
+    tags: ['freză', 'rotativă', 'compact', 'grădină'],
+    weight: 165
+  },
+
+  {
+    id: 'boxer-rt125',
+    name: 'Boxer RT125 Freză Rotativă',
+    nameEn: 'Boxer RT125 Rotary Tiller',
+    description: 'Freză rotativă versatilă de 1.25m pentru pregătirea eficientă a solului în agricultură și horticultură.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 2800,
+    priceRange: '2.800 - 3.300 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 125,
+      'Numărul de cuțite': 24,
+      'Adâncimea de lucru (cm)': '15-25',
+      'Viteză de lucru (km/h)': '4-8',
+      'Greutate (kg)': 195
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+    features: [
+      'Cuțite performante în Y',
+      'Sistem de protecție',
+      'Reglare hidraulică',
+      'Patină de nivelare',
+      'Durabilitate sporită'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '20-35',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I',
+      'Tip transmisie': 'Lanț ranforsat',
+      'Lățime transport (m)': 1.4
     },
     availability: 'in-stock',
     isFeatured: true,
-    tags: ['grapă', 'rotativă', 'finisare'],
-    weight: 380
+    tags: ['freză', 'rotativă', 'versatil', 'agricultură'],
+    weight: 195
+  },
+
+  // GRAPE ROTATIVE - ROTARY HARROWS
+  {
+    id: 'boxer-rh200',
+    name: 'Boxer RH200 Grapă Rotativă',
+    nameEn: 'Boxer RH200 Rotary Harrow',
+    description: 'Grapă rotativă de 2m pentru finisarea și pregătirea patului germinativ cu sistem de dinți performant.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 4800,
+    priceRange: '4.800 - 5.500 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 200,
+      'Numărul de secțiuni': 4,
+      'Adâncimea de lucru (cm)': '3-12',
+      'Viteză de lucru (km/h)': '10-18',
+      'Greutate (kg)': 320
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+    features: [
+      'Dinți din oțel elastic',
+      'Suspensie independentă',
+      'Finisare perfectă',
+      'Pliabilă hidraulic',
+      'Viteză înaltă de lucru'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-55',
+      'Tip atașare': 'Trei puncte Cat I/II',
+      'Lățimea de transport (m)': 2.5,
+      'Numărul de dinți': 80,
+      'Presiune la sol (kg/cm²)': 0.8
+    },
+    availability: 'in-stock',
+    tags: ['grapă', 'rotativă', 'finisare', 'germinativ'],
+    weight: 320
+  },
+
+  // CULTIVATOARE - CULTIVATORS
+  {
+    id: 'boxer-cv180',
+    name: 'Boxer CV180 Cultivator',
+    nameEn: 'Boxer CV180 Cultivator',
+    description: 'Cultivator robust de 1.8m pentru prelucrarea secundară a solului cu dinți performanți și sistem de siguranță.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 3600,
+    priceRange: '3.600 - 4.200 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Numărul de dinți': 9,
+      'Adâncimea de lucru (cm)': '8-25',
+      'Distanța între dinți (cm)': 20,
+      'Greutate (kg)': 280
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+    features: [
+      'Dinți cu siguranță cu arc',
+      'Reglare adâncime centralizată',
+      'Construcție heavy-duty',
+      'Penetrare excelentă',
+      'Durabilitate maximă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Tip atașare': 'Trei puncte Cat I',
+      'Tip dinți': 'Rigid cu siguranță',
+      'Lățime transport (m)': 1.9,
+      'Clearance (cm)': 65
+    },
+    availability: 'in-stock',
+    tags: ['cultivator', 'robust', 'secundar', 'siguranță'],
+    weight: 280
+  }
+];
+
+// SILVICULTURĂ - Forestry Machinery
+export const forestryMachineryProducts: DetailedProduct[] = [
+  // TOCĂTOARE DE LEMN - WOOD CHIPPERS
+  {
+    id: 'boxer-hv106',
+    name: 'Boxer HV106 Tocător de Lemn',
+    nameEn: 'Boxer HV106 Wood Chipper',
+    description: 'Tocător de lemn compact pentru ramuri și material lemnos mic, ideal pentru întreținerea grădinilor și parcurilor.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    price: 1475,
+    priceRange: '1.475 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 60,
+      'Lățimea de alimentare (mm)': 150,
+      'Numărul de cuțite': 2,
+      'Capacitatea de producție (m³/h)': 2,
+      'Greutate (kg)': 95
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+    features: [
+      'Design compact și ușor',
+      'Cuțite schimbabile',
+      'Gură de alimentare optimizată',
+      'Sistem de siguranță',
+      'Facilitate de transport'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-25',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0',
+      'Viteză rotor (RPM)': 2800,
+      'Material cuțite': 'Oțel călit'
+    },
+    availability: 'in-stock',
+    tags: ['tocător', 'compact', 'grădină', 'ramuri'],
+    weight: 95
+  },
+
+  {
+    id: 'boxer-hv108',
+    name: 'Boxer HV108 Tocător de Lemn',
+    nameEn: 'Boxer HV108 Wood Chipper',
+    description: 'Tocător de lemn profesional pentru material lemnos de dimensiuni medii cu sistem de alimentare îmbunătățit.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    priceFrom: 2100,
+    priceRange: '2.100 - 2.400 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 80,
+      'Lățimea de alimentare (mm)': 200,
+      'Numărul de cuțite': 2,
+      'Capacitatea de producție (m³/h)': 4,
+      'Greutate (kg)': 125
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+    features: [
+      'Capacitate sporită',
+      'Sistem de alimentare îmbunătățit',
+      'Cuțite de înaltă calitate',
+      'Construcție robustă',
+      'Performanțe superioare'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '20-35',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I',
+      'Viteză rotor (RPM)': 2600,
+      'Unghi de proiecție': 45
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['tocător', 'profesional', 'mediu', 'performant'],
+    weight: 125
   }
 ];
 
@@ -240,7 +537,7 @@ export const excavatorProducts: DetailedProduct[] = [
     id: 'xcmg-xe18e',
     name: 'XCMG XE18E Excavator Compact',
     nameEn: 'XCMG XE18E Compact Excavator',
-    description: 'Excavator compact de 1.8 tone cu motor eficient și cabină confortabilă pentru lucrări urbane',
+    description: 'Excavator compact de 1.8 tone cu motor eficient și cabină confortabilă pentru lucrări urbane și agricole de precizie.',
     brand: 'XCMG',
     category: 'construction-machinery',
     subcategory: 'excavators',
@@ -255,26 +552,29 @@ export const excavatorProducts: DetailedProduct[] = [
       'Capacitate cupă (L)': 60
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/08/2918-XE18E-06.png?v=1-3'
+      'https://www.heustractors.com/uploads/media/product_list/08/2918-XE18E-06.png?v=1-3',
+      'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E%20knip-3.png?v=1-4'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/2918-XE18E-06.png?v=1-3',
     features: [
-      'Motor Euro 5',
-      'Cabină ROPS/FOPS',
-      'Sistem hidraulic eficient',
-      'Design compact pentru spații restrânse',
-      'Consum redus de combustibil'
+      'Motor Euro 5 eficient',
+      'Cabină ROPS/FOPS certificată',
+      'Sistem hidraulic performant',
+      'Design compact pentru spații înguste',
+      'Consum redus de combustibil',
+      'Joystick pilot pentru control precis'
     ],
     technicalData: {
       'Motor': 'Yanmar 3TNV76',
       'Capacitate combustibil (L)': 30,
       'Viteza de deplasare (km/h)': 4.5,
       'Presiune hidraulică (bar)': 245,
-      'Debit pompă (L/min)': 38
+      'Debit pompă (L/min)': 38,
+      'Forța de săpare (kN)': 18
     },
     availability: 'in-stock',
     isFeatured: true,
-    tags: ['excavator', 'compact', 'urban'],
+    tags: ['excavator', 'compact', 'urban', 'eficient'],
     weight: 1800,
     dimensions: {
       length: 4850,
@@ -284,56 +584,10 @@ export const excavatorProducts: DetailedProduct[] = [
   },
 
   {
-    id: 'xcmg-xe19e',
-    name: 'XCMG XE19E Excavator Compact',
-    nameEn: 'XCMG XE19E Compact Excavator',
-    description: 'Excavator compact de 1.9 tone cu performanțe superioare și versatilitate maximă',
-    brand: 'XCMG',
-    category: 'construction-machinery',
-    subcategory: 'excavators',
-    priceFrom: 24780,
-    priceRange: '24.780 - 26.500 EUR',
-    specifications: {
-      'Greutate operațională (kg)': 1900,
-      'Putere motor (kW)': 14.5,
-      'Adâncime săpare (mm)': 2780,
-      'Înălțime descărcare (mm)': 4100,
-      'Raza de lucru (mm)': 5020,
-      'Capacitate cupă (L)': 70
-    },
-    images: [
-      'https://www.heustractors.com/uploads/media/product_list/06/1156-XE19E%20uitgesneden-4.png?v=1-4'
-    ],
-    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/1156-XE19E%20uitgesneden-4.png?v=1-4',
-    features: [
-      'Motor Yanmar performant',
-      'Sistem hidraulic avansat',
-      'Cabină ergonomică',
-      'Viteză de lucru ridicată',
-      'Fiabilitate maximă'
-    ],
-    technicalData: {
-      'Motor': 'Yanmar 3TNV88',
-      'Capacitate combustibil (L)': 32,
-      'Viteza de deplasare (km/h)': 4.8,
-      'Presiune hidraulică (bar)': 250,
-      'Debit pompă (L/min)': 42
-    },
-    availability: 'in-stock',
-    tags: ['excavator', 'compact', 'performant'],
-    weight: 1900,
-    dimensions: {
-      length: 5020,
-      width: 1580,
-      height: 2480
-    }
-  },
-
-  {
     id: 'xcmg-xe27e',
     name: 'XCMG XE27E Excavator Compact',
     nameEn: 'XCMG XE27E Compact Excavator',
-    description: 'Excavator compact de 2.7 tone cu forță de săpare superioară și stabilitate excelentă',
+    description: 'Excavator compact de 2.7 tone cu forță de săpare superioară și stabilitate excelentă pentru lucrări de construcții.',
     brand: 'XCMG',
     category: 'construction-machinery',
     subcategory: 'excavators',
@@ -353,21 +607,22 @@ export const excavatorProducts: DetailedProduct[] = [
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E%20knip-3.png?v=1-4',
     features: [
       'Forță de săpare superioară',
-      'Stabilitate excelentă',
-      'Cabină spacioasă',
-      'Control intuitiv',
-      'Durabilitate ridicată'
+      'Stabilitate excelentă pe teren',
+      'Cabină spacioasă și ergonomică',
+      'Control intuitiv și responsiv',
+      'Durabilitate și fiabilitate ridicată',
+      'Sistem de monitorizare LCD'
     ],
     technicalData: {
       'Motor': 'Yanmar 3TNV88',
       'Capacitate combustibil (L)': 40,
       'Viteza de deplasare (km/h)': 4.5,
       'Presiune hidraulică (bar)': 260,
-      'Debit pompă (L/min)': 48
+      'Debit pompă (L/min)': 48,
+      'Forța de săpare (kN)': 27
     },
     availability: 'in-stock',
-    isFeatured: true,
-    tags: ['excavator', 'forță', 'stabilitate'],
+    tags: ['excavator', 'forță', 'stabilitate', 'construcții'],
     weight: 2700,
     dimensions: {
       length: 5450,
@@ -383,7 +638,7 @@ export const wheelLoaderProducts: DetailedProduct[] = [
     id: 'boxer-w11-emc',
     name: 'Boxer W11 EMC Încărcător pe Roți',
     nameEn: 'Boxer W11 EMC Wheel Loader',
-    description: 'Încărcător pe roți compact cu sistem EMC pentru control precis și eficiență maximă',
+    description: 'Încărcător pe roți compact cu sistem EMC avansat pentru control precis și eficiență maximă în lucrările de construcții.',
     brand: 'Boxer',
     category: 'construction-machinery',
     subcategory: 'wheel-loaders',
@@ -406,18 +661,20 @@ export const wheelLoaderProducts: DetailedProduct[] = [
       'Motor eficient cu emisii reduse',
       'Cabină ergonomică cu climatizare',
       'Transmisie hidrostatică',
-      'Cupă cu profil optimizat'
+      'Cupă cu profil optimizat pentru încărcare',
+      'Sistem hidraulic cu răspuns rapid'
     ],
     technicalData: {
       'Motor': 'Perkins Tier 4',
       'Capacitate combustibil (L)': 65,
       'Sistem hidraulic (L/min)': 85,
       'Presiune de lucru (bar)': 220,
-      'Raza de întoarcere (mm)': 3800
+      'Raza de întoarcere (mm)': 3800,
+      'Unghi de basculare (grade)': 45
     },
     availability: 'in-stock',
     isFeatured: true,
-    tags: ['încărcător', 'EMC', 'eficient'],
+    tags: ['încărcător', 'EMC', 'eficient', 'construcții'],
     weight: 3200,
     dimensions: {
       length: 5850,
@@ -433,7 +690,7 @@ export const compactTractorProducts: DetailedProduct[] = [
     id: 'tafe-6020m',
     name: 'TAFE 6020M Tractor Compact',
     nameEn: 'TAFE 6020M Compact Tractor',
-    description: 'Tractor compact de 20 CP cu motor diesel eficient, ideal pentru ferme mici și lucrări de grădină',
+    description: 'Tractor compact de 20 CP cu motor diesel eficient, perfect pentru ferme mici, grădini și lucrări de întreținere.',
     brand: 'TAFE',
     category: 'tractors',
     subcategory: 'compact-tractors',
@@ -448,25 +705,28 @@ export const compactTractorProducts: DetailedProduct[] = [
       'Greutate (kg)': 980
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/03/5413-Tafe%206028M%20to%206020M%20Right.png?v=1-2'
+      'https://www.heustractors.com/uploads/media/product_list/03/5413-Tafe%206028M%20to%206020M%20Right.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/02/1222-Tafe%206028%20M-07.png?v=1-2'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/5413-Tafe%206028M%20to%206020M%20Right.png?v=1-2',
     features: [
-      'Motor diesel 3 cilindri',
-      'Transmisie sincronizată',
-      'Sistem hidraulic eficient',
+      'Motor diesel 3 cilindri eficient',
+      'Transmisie sincronizată cu 8 viteze',
+      'Sistem hidraulic cu pompă cu angrenaje',
       'Design compact și manevrabil',
-      'Consum redus de combustibil'
+      'Consum redus de combustibil',
+      'Direcție asistată hidraulic'
     ],
     technicalData: {
       'Motor': 'TAFE DI-35',
       'Capacitate combustibil (L)': 25,
       'Sistem hidraulic (L/min)': 25,
       'Capacitate ridicare (kg)': 800,
-      'Ecartament față (mm)': '1220-1520'
+      'Ecartament față (mm)': '1220-1520',
+      'Clearance la sol (mm)': 350
     },
     availability: 'in-stock',
-    tags: ['tractor', 'compact', 'eficient'],
+    tags: ['tractor', 'compact', 'eficient', 'ferme-mici'],
     weight: 980,
     dimensions: {
       length: 2980,
@@ -479,7 +739,7 @@ export const compactTractorProducts: DetailedProduct[] = [
     id: 'tafe-6028m',
     name: 'TAFE 6028M Tractor Compact',
     nameEn: 'TAFE 6028M Compact Tractor',
-    description: 'Tractor compact de 28 CP cu tehnologie avansată pentru productivitate maximă',
+    description: 'Tractor compact de 28 CP cu tehnologie avansată și versatilitate maximă pentru diverse aplicații agricole.',
     brand: 'TAFE',
     category: 'tractors',
     subcategory: 'compact-tractors',
@@ -498,68 +758,75 @@ export const compactTractorProducts: DetailedProduct[] = [
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1221-Tafe%206028%20M-02.png?v=1-12',
     features: [
-      'Motor diesel performant',
-      'Cutie de viteze sincronizată',
-      'Sistem hidraulic de mare capacitate',
-      'Cabină ergonomică opțională',
-      'Versatilitate maximă'
+      'Motor diesel de înaltă performanță',
+      'Transmisie robustă cu sincronizare',
+      'Sistem hidraulic cu debit mare',
+      'Ergonomie și confort sporit',
+      'Versatilitate în utilizare',
+      'Sistem de frânare eficient'
     ],
     technicalData: {
-      'Motor': 'TAFE DI-35 Turbo',
-      'Capacitate combustibil (L)': 30,
-      'Sistem hidraulic (L/min)': 30,
-      'Capacitate ridicare (kg)': 1000,
-      'Ecartament față (mm)': '1220-1520'
+      'Motor': 'TAFE DI-42',
+      'Capacitate combustibil (L)': 28,
+      'Sistem hidraulic (L/min)': 32,
+      'Capacitate ridicare (kg)': 950,
+      'Ecartament față (mm)': '1250-1550',
+      'Viteză maximă (km/h)': 24
     },
     availability: 'in-stock',
     isFeatured: true,
-    tags: ['tractor', 'compact', 'performant'],
+    tags: ['tractor', 'compact', 'performant', 'versatil'],
     weight: 1050,
     dimensions: {
-      length: 3180,
-      width: 1220,
+      length: 3100,
+      width: 1250,
       height: 2150
     }
   }
 ];
 
-// Export all products combined
+// Toate produsele Boxer combinate
 export const allBoxerProducts: DetailedProduct[] = [
   ...grasslandCultivationProducts,
   ...soilCultivationProducts,
+  ...forestryMachineryProducts,
   ...excavatorProducts,
   ...wheelLoaderProducts,
   ...compactTractorProducts
 ];
 
-// Helper functions
-export const getProductsByCategory = (category: string, subcategory?: string): DetailedProduct[] => {
-  return allBoxerProducts.filter(product => {
-    if (subcategory) {
-      return product.category === category && product.subcategory === subcategory;
-    }
-    return product.category === category;
-  });
-};
+// Funcții helper pentru filtrarea și căutarea produselor
+export function getProductsByCategory(category: string, subcategory?: string): DetailedProduct[] {
+  let products = allBoxerProducts.filter(product => product.category === category);
+  
+  if (subcategory) {
+    products = products.filter(product => product.subcategory === subcategory);
+  }
+  
+  return products;
+}
 
-export const getProductById = (id: string): DetailedProduct | undefined => {
+export function getProductById(id: string): DetailedProduct | undefined {
   return allBoxerProducts.find(product => product.id === id);
-};
+}
 
-export const getFeaturedProducts = (): DetailedProduct[] => {
+export function getFeaturedProducts(): DetailedProduct[] {
   return allBoxerProducts.filter(product => product.isFeatured);
-};
+}
 
-export const getProductsByBrand = (brand: string): DetailedProduct[] => {
-  return allBoxerProducts.filter(product => product.brand.toLowerCase() === brand.toLowerCase());
-};
-
-export const searchProducts = (query: string): DetailedProduct[] => {
-  const lowercaseQuery = query.toLowerCase();
+export function getProductsByBrand(brand: string): DetailedProduct[] {
   return allBoxerProducts.filter(product => 
-    product.name.toLowerCase().includes(lowercaseQuery) ||
-    product.description.toLowerCase().includes(lowercaseQuery) ||
-    product.features.some(feature => feature.toLowerCase().includes(lowercaseQuery)) ||
-    product.tags.some(tag => tag.toLowerCase().includes(lowercaseQuery))
+    product.brand.toLowerCase() === brand.toLowerCase()
   );
-};
+}
+
+export function searchProducts(query: string): DetailedProduct[] {
+  const searchTerm = query.toLowerCase();
+  return allBoxerProducts.filter(product =>
+    product.name.toLowerCase().includes(searchTerm) ||
+    product.nameEn.toLowerCase().includes(searchTerm) ||
+    product.description.toLowerCase().includes(searchTerm) ||
+    product.features.some(feature => feature.toLowerCase().includes(searchTerm)) ||
+    product.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+  );
+}
