@@ -276,6 +276,170 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
     isFeatured: true,
     tags: ['cositor', 'rotativ', '150cm', 'profesional'],
     weight: 220
+  },
+
+  // COSITORI CU DISCURI - DISC MOWERS
+  {
+    id: 'boxer-dm120',
+    name: 'Boxer DM120 Cositor cu Discuri',
+    nameEn: 'Boxer DM120 Disc Mower',
+    description: 'Cositor cu discuri compact de 1.2m pentru tăierea precisă a ierbii și furajelor cu sistem de protecție avansat.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 3200,
+    priceRange: '3.200 - 3.600 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Numărul de discuri': 4,
+      'Înălțimea de tăiere (mm)': '20-70',
+      'Viteză de lucru (km/h)': '8-15',
+      'Greutate (kg)': 240
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+    features: [
+      'Discuri din oțel durabil',
+      'Sistem anti-înfundare',
+      'Protecție prin siguranțe',
+      'Tăiere uniformă și netă',
+      'Mentenanță simplă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '20-35',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I',
+      'Diametru discuri (mm)': 165,
+      'Viteză rotire discuri (RPM)': 3000
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'discuri', 'precis', 'furajere'],
+    weight: 240
+  },
+
+  {
+    id: 'boxer-dm160',
+    name: 'Boxer DM160 Cositor cu Discuri',
+    nameEn: 'Boxer DM160 Disc Mower',
+    description: 'Cositor cu discuri profesional de 1.6m pentru ferme mari cu sistem de tăiere de înaltă performanță.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 4100,
+    priceRange: '4.100 - 4.700 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 160,
+      'Numărul de discuri': 5,
+      'Înălțimea de tăiere (mm)': '20-80',
+      'Viteză de lucru (km/h)': '10-18',
+      'Greutate (kg)': 310
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+    features: [
+      'Sistem de discuri rapid',
+      'Cutit protecție în centru',
+      'Suspensie individuală',
+      'Calitate superioară de tăiere',
+      'Durabilitate extremă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I',
+      'Diametru discuri (mm)': 165,
+      'Unghi de lucru (grade)': 25
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'discuri', 'profesional', 'ferme-mari'],
+    weight: 310
+  },
+
+  // COSITORI CU CIOCANELE - FLAIL MOWERS
+  {
+    id: 'boxer-fm120',
+    name: 'Boxer FM120 Cositor cu Ciocanele',
+    nameEn: 'Boxer FM120 Flail Mower',
+    description: 'Cositor cu ciocanele robust pentru tăierea vegetației dense, tufișurilor și a materiei organice groase.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2900,
+    priceRange: '2.900 - 3.400 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Numărul de ciocanele': 32,
+      'Diametrul maxim tăiat (mm)': 40,
+      'Viteză rotor (RPM)': 2200,
+      'Greutate (kg)': 195
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+    features: [
+      'Ciocanele din oțel forjat',
+      'Rotor balanseat dinamic',
+      'Protecție împotriva pietrelor',
+      'Tăiere perfectă în condiții dificile',
+      'Design robust pentru durabilitate'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '20-35',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I',
+      'Tip ciocanele': 'Mobil articulat',
+      'Lățime transport (m)': 1.3
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'ciocanele', 'robust', 'vegetație'],
+    weight: 195
+  },
+
+  {
+    id: 'boxer-fm150',
+    name: 'Boxer FM150 Cositor cu Ciocanele',
+    nameEn: 'Boxer FM150 Flail Mower',
+    description: 'Cositor cu ciocanele heavy-duty pentru întreținerea infrastructurii rutiere și a zonelor industriale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 3600,
+    priceRange: '3.600 - 4.200 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 150,
+      'Numărul de ciocanele': 40,
+      'Diametrul maxim tăiat (mm)': 50,
+      'Viteză rotor (RPM)': 2100,
+      'Greutate (kg)': 235
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+    features: [
+      'Construcție heavy-duty',
+      'Sistem anti-înfundare',
+      'Ciocanele schimbabile rapid',
+      'Performanțe superioare',
+      'Potrivit pentru vegetație deasă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II',
+      'Material ciocanele': 'Oțel dur călit',
+      'Protecție spate': 'Rolă de finisare'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'ciocanele', 'heavy-duty', 'industrial'],
+    weight: 235
   }
 ];
 
@@ -528,6 +692,171 @@ export const forestryMachineryProducts: DetailedProduct[] = [
     isFeatured: true,
     tags: ['tocător', 'profesional', 'mediu', 'performant'],
     weight: 125
+  },
+
+  // MULČERE ȘI TOCĂTOARE - MULCHERS AND SHREDDERS
+  {
+    id: 'boxer-hm180',
+    name: 'Boxer HM180 Mulcer Heavy-Duty',
+    nameEn: 'Boxer HM180 Heavy-Duty Mulcher',
+    description: 'Mulcer profesional pentru silvioltură cu capacitate de tăiere a lemnului de până la 15cm diametru.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    priceFrom: 8500,
+    priceRange: '8.500 - 9.800 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Diametrul maxim tăiat (mm)': 150,
+      'Numărul de martoare': 16,
+      'Greutate (kg)': 680,
+      'Adâncime pătrundere (cm)': 25
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+    features: [
+      'Rotor cu martoare fixe',
+      'Protecție împotriva pietrelor',
+      'Sistem hidraulic pentru reglaje',
+      'Construcție ultra-robustă',
+      'Potrivit pentru teren accidentat'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '60-100',
+      'Viteză PTO (RPM)': 1000,
+      'Tip atașare': 'Trei puncte Cat II/III',
+      'Viteză rotor (RPM)': 1800,
+      'Sistem de protecție': 'Siguranțe hidraulice'
+    },
+    availability: 'on-order',
+    tags: ['mulcer', 'silvioltură', 'heavy-duty', 'profesional'],
+    weight: 680
+  },
+
+  {
+    id: 'boxer-hs140',
+    name: 'Boxer HS140 Tocător de Crengi',
+    nameEn: 'Boxer HS140 Branch Shredder',
+    description: 'Tocător specializat pentru prelucrarea crengilor și deșeurilor vegetale cu sistem de alimentare optimizat.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    priceFrom: 3200,
+    priceRange: '3.200 - 3.800 EUR',
+    specifications: {
+      'Lățimea gură alimentare (mm)': 400,
+      'Diametrul maxim (mm)': 100,
+      'Numărul de cuțite': 4,
+      'Capacitate producție (m³/h)': 8,
+      'Greutate (kg)': 180
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+    features: [
+      'Alimentare automată',
+      'Cuțite autotocitoare',
+      'Sistem de evacuare îmbunătățit',
+      'Control de siguranță avansat',
+      'Eficiență energetică ridicată'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-55',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I',
+      'Viteză rotor (RPM)': 2400,
+      'Unghi evacuare': 'Reglabil 0-45°'
+    },
+    availability: 'in-stock',
+    tags: ['tocător', 'crengi', 'deșeuri', 'eficient'],
+    weight: 180
+  }
+];
+
+// RĂSPÂNDIRE ȘI SEMĂNAT - SPREADING AND SEEDING
+export const spreadingSeedingProducts: DetailedProduct[] = [
+  {
+    id: 'boxer-fs300',
+    name: 'Boxer FS300 Răspânditor de Îngrășământ',
+    nameEn: 'Boxer FS300 Fertilizer Spreader',
+    description: 'Răspânditor centrifugal de îngrășământ cu rezervor de 300L și sistem de distribuție uniform pentru fermele mici și medii.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'spreading-seeding',
+    priceFrom: 1850,
+    priceRange: '1.850 - 2.200 EUR',
+    specifications: {
+      'Capacitate rezervor (L)': 300,
+      'Lățimea de lucru (m)': '8-12',
+      'Greutatea maximă (kg)': 400,
+      'Tip acționare': 'PTO',
+      'Material rezervor': 'Inox AISI 304'
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+    features: [
+      'Distribuție uniformă garantată',
+      'Reglare cantitate din cabină',
+      'Rezervor din inox pentru durabilitate',
+      'Sistem anti-coroziune',
+      'Montare și demontare rapidă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-25',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0/I',
+      'Viteză optimă (km/h)': '8-12',
+      'Rază de acțiune (m)': 6
+    },
+    availability: 'in-stock',
+    tags: ['răspânditor', 'îngrășământ', 'centrifugal', 'uniform'],
+    weight: 85
+  },
+
+  {
+    id: 'boxer-seed250',
+    name: 'Boxer SEED250 Semănătoare Universală',
+    nameEn: 'Boxer SEED250 Universal Seeder',
+    description: 'Semănătoare universală pentru cereale și plante furajere cu sistem de dozare de precizie și rezervor de 250L.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'spreading-seeding',
+    priceFrom: 4200,
+    priceRange: '4.200 - 4.900 EUR',
+    specifications: {
+      'Capacitate rezervor (L)': 250,
+      'Lățimea de lucru (m)': 2.5,
+      'Numărul de reduri': 15,
+      'Distanța între reduri (cm)': 16.7,
+      'Adâncime semănat (cm)': '1-6'
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+    features: [
+      'Dozare de precizie pentru toate semințele',
+      'Roți de acoperire reglabile',
+      'Sistem de marcare automată',
+      'Distribuție uniformă garantată',
+      'Potrivită pentru terenuri în pantă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Tip atașare': 'Trei puncte Cat I',
+      'Tip dozator': 'Mecanic cu role',
+      'Capacitate semințe (kg/ha)': '5-300',
+      'Lățime transport (m)': 2.6
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['semănătoare', 'cereale', 'furajere', 'precizie'],
+    weight: 320
   }
 ];
 
@@ -790,6 +1119,7 @@ export const allBoxerProducts: DetailedProduct[] = [
   ...grasslandCultivationProducts,
   ...soilCultivationProducts,
   ...forestryMachineryProducts,
+  ...spreadingSeedingProducts,
   ...excavatorProducts,
   ...wheelLoaderProducts,
   ...compactTractorProducts
