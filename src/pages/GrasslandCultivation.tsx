@@ -293,7 +293,11 @@ const GrasslandCultivation = () => {
 
                     <div className="flex space-x-2">
                       <Button asChild className="flex-1">
-                        <Link to={`/utilaje-agricole/cultivarea-pajistilor/${product.id}`}>
+                        <Link to={
+                          product.id.includes('boxer-agf') 
+                            ? `/serie/boxer-agf` 
+                            : `/produs/${product.id}`
+                        }>
                           Vezi Detalii
                           <ArrowRight size={16} className="ml-2" />
                         </Link>
@@ -372,7 +376,11 @@ const GrasslandCultivation = () => {
                           </div>
                         )}
                         <Button asChild>
-                          <Link to={`/utilaje-agricole/cultivarea-pajistilor/${product.id}`} className="flex items-center space-x-2">
+                          <Link to={
+                            product.id.includes('boxer-agf') 
+                              ? `/serie/boxer-agf` 
+                              : `/produs/${product.id}`
+                          } className="flex items-center space-x-2">
                             <span>Vezi Detalii</span>
                             <ArrowRight size={16} />
                           </Link>

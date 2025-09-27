@@ -15,6 +15,7 @@ import ForestryMachinery from "./pages/ForestryMachinery";
 import Inventory from "./pages/Inventory";
 import Tractors from "./pages/Tractors";
 import ProductDetail from "./pages/ProductDetail";
+import BoxerAGFSeries from "./pages/BoxerAGFSeries";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
               <Route path="/inventar" element={<Inventory />} />
               <Route path="/tractoare" element={<Tractors />} />
               <Route path="/produs/:id" element={<ProductDetail />} />
+              <Route path="/serie/boxer-agf" element={<BoxerAGFSeries />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
