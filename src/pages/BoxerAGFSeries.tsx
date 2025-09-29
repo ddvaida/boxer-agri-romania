@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ArrowLeft, Phone, Mail, Star, CheckCircle, Truck, Info, Settings, FileText, ShoppingCart, Heart, Share2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Phone, Mail, Star, CheckCircle, Truck, Info, Settings, FileText, ShoppingCart, Heart, Share2, Download, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
 import { grasslandCultivationProducts } from '@/data/allProducts';
 
 const BoxerAGFSeries = () => {
@@ -13,9 +13,23 @@ const BoxerAGFSeries = () => {
   );
 
   const [selectedProduct, setSelectedProduct] = useState(agfProducts[0]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleProductChange = (product: typeof selectedProduct) => {
     setSelectedProduct(product);
+    setCurrentImageIndex(0);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === selectedProduct.images.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === 0 ? selectedProduct.images.length - 1 : prev - 1
+    );
   };
 
   if (!selectedProduct) {
@@ -31,223 +45,163 @@ const BoxerAGFSeries = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header cu navigare */}
-      <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-b">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center gap-2 text-sm mb-4">
-            <a href="/" className="text-muted-foreground hover:text-primary transition-colors">Acasă</a>
-            <span className="text-muted-foreground">/</span>
-            <a href="/utilaje-agricole" className="text-muted-foreground hover:text-primary transition-colors">Utilaje Agricole</a>
-            <span className="text-muted-foreground">/</span>
-            <a href="/utilaje-agricole/cultivarea-pajistilor" className="text-muted-foreground hover:text-primary transition-colors">Cultivarea Pajiștilor</a>
-            <span className="text-muted-foreground">/</span>
-            <span className="text-primary font-medium">Seria AGF Pro</span>
-          </nav>
-          
-          <div className="flex items-center gap-4">
-            <div className="flex-1">
-              <h1 className="text-3xl font-bold text-foreground mb-2">Boxer AGF Pro - Cositori cu Braț Offset</h1>
-              <p className="text-lg text-muted-foreground">Soluția profesională pentru întreținerea marginilor drumurilor și zonelor greu accesibile</p>
-            </div>
-            <div className="hidden md:flex items-center gap-2">
-              <Badge variant="secondary" className="bg-green-100 text-green-800 border-green-200">
-                <CheckCircle className="w-3 h-3 mr-1" />
-                În stoc
-              </Badge>
-              <Badge variant="outline" className="border-primary/30 text-primary">
-                12 luni garanție
-              </Badge>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="container mx-auto px-4 py-6">
+        {/* Breadcrumb */}
+        <nav className="flex items-center gap-2 text-sm mb-6">
+          <a href="/" className="text-muted-foreground hover:text-primary transition-colors">Home</a>
+          <span className="text-muted-foreground">/</span>
+          <a href="/utilaje-agricole" className="text-muted-foreground hover:text-primary transition-colors">Agricultural Machinery</a>
+          <span className="text-muted-foreground">/</span>
+          <span className="text-primary font-medium">Boxer FA rotary mower</span>
+        </nav>
 
-      <div className="container mx-auto px-4 py-8">
-        {/* Selector de model - Stil similar cu heustractors.com */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <Settings className="w-5 h-5 text-primary" />
-            Selectează modelul dorit:
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {agfProducts.map((product) => (
-              <Card 
-                key={product.id}
-                className={`cursor-pointer transition-all hover:shadow-lg ${
-                  selectedProduct.id === product.id 
-                    ? 'ring-2 ring-primary border-primary bg-primary/5' 
-                    : 'hover:border-primary/50 hover:bg-primary/5'
-                }`}
-                onClick={() => handleProductChange(product)}
-              >
-                <CardContent className="p-4 text-center">
-                  <div className="font-bold text-primary text-lg mb-1">
-                    {product.name.replace('Boxer ', '').replace(' Cositor cu Braț', '')}
-                  </div>
-                  <div className="text-sm text-muted-foreground mb-2">
-                    Lățime lucru: {product.specifications['Lățimea de lucru (cm)']}cm
-                  </div>
-                  <div className="font-semibold text-green-600">
-                    de la {product.priceFrom?.toLocaleString()} EUR
-                  </div>
-                  {selectedProduct.id === product.id && (
-                    <div className="mt-2">
-                      <Badge variant="default">Selectat</Badge>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Imaginea produsului */}
-          <div className="lg:col-span-2 space-y-4">
-            <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden relative group">
+        {/* Main Product Layout */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          {/* Left side - Product Image Gallery */}
+          <div className="space-y-4">
+            {/* Main Product Image */}
+            <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden relative group border">
               <img 
-                src={selectedProduct.mainImage} 
+                src={selectedProduct.images[currentImageIndex] || selectedProduct.mainImage} 
                 alt={selectedProduct.name}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-contain"
               />
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute top-4 right-4 bg-white/80 hover:bg-white"
+              >
+                <ZoomIn className="w-4 h-4" />
+              </Button>
             </div>
             
-            {/* Galerie de imagini mici */}
-            {selectedProduct.images.length > 1 && (
-              <div className="flex gap-2 overflow-x-auto pb-2">
+            {/* Thumbnail Gallery */}
+            <div className="flex items-center gap-2">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={prevImage}
+                className="flex-shrink-0"
+                disabled={selectedProduct.images.length <= 1}
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </Button>
+              
+              <div className="flex gap-2 overflow-hidden flex-1">
                 {selectedProduct.images.map((image, index) => (
-                  <div key={index} className="flex-shrink-0 w-16 h-16 bg-muted rounded-lg overflow-hidden cursor-pointer hover:ring-2 ring-primary transition-all">
+                  <div 
+                    key={index} 
+                    className={`flex-shrink-0 w-20 h-16 bg-white rounded-lg overflow-hidden cursor-pointer border-2 transition-all ${
+                      index === currentImageIndex ? 'border-primary' : 'border-border hover:border-primary/50'
+                    }`}
+                    onClick={() => setCurrentImageIndex(index)}
+                  >
                     <img 
                       src={image}
                       alt={`${selectedProduct.name} ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 ))}
               </div>
-            )}
-            
-            {/* Key Features Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
-              {Object.entries(selectedProduct.specifications).slice(0, 4).map(([key, value]) => (
-                <div key={key} className="text-center p-4 bg-gradient-to-br from-primary/5 to-primary/10 rounded-lg border border-primary/20">
-                  <div className="text-xs text-muted-foreground mb-1">{key}</div>
-                  <div className="font-bold text-primary">{value}</div>
-                </div>
-              ))}
+              
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={nextImage}
+                className="flex-shrink-0"
+                disabled={selectedProduct.images.length <= 1}
+              >
+                <ChevronRight className="w-4 h-4" />
+              </Button>
             </div>
           </div>
 
-          {/* Informațiile produsului - Sidebar */}
-          <div className="space-y-6 sticky top-4 h-fit">
+          {/* Right side - Product Information */}
+          <div className="space-y-6">
+            {/* Product Title */}
             <div>
-              <div className="flex items-center gap-2 mb-3">
-                <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
-                  {selectedProduct.brand}
-                </Badge>
-                <Badge variant="outline" className={
-                  selectedProduct.availability === 'in-stock' 
-                    ? 'border-green-500/30 text-green-700 bg-green-50' 
-                    : 'border-orange-500/30 text-orange-700 bg-orange-50'
-                }>
-                  <CheckCircle className="w-3 h-3 mr-1" />
-                  {selectedProduct.availability === 'in-stock' ? 'În stoc' : 'La comandă'}
-                </Badge>
-              </div>
-              <h1 className="text-2xl font-bold mb-3 text-foreground">{selectedProduct.name}</h1>
-              <p className="text-muted-foreground leading-relaxed text-sm">
-                {selectedProduct.description}
+              <h1 className="text-3xl font-bold text-foreground mb-4">Boxer FA rotary mower</h1>
+              <p className="text-muted-foreground text-base leading-relaxed mb-4">
+                The Boxer FA rotary mower is extremely suitable for use behind compact tractors 
+                and medium-sized tractors. This makes this mower highly suitable for lawns, parks, 
+                meadows and sports fields. The rotary mower is equipped with 3 cutting blades 
+                and the cutting height is adjustable by adjusting the 4 wheels. In addition, the 
+                grass is ejected at the rear.
               </p>
+
+              {/* Key Features */}
+              <div className="space-y-2 mb-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-sm">Comes complete with power take-off.</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-sm">Supplied as a package (assembly time 1 hour).</span>
+                </div>
+              </div>
+
+              {/* Read More Link */}
+              <Button variant="link" className="p-0 h-auto text-destructive font-semibold">
+                READ MORE <ArrowRight className="w-4 h-4 ml-1" />
+              </Button>
             </div>
 
-            {/* Prețul */}
-            <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10">
-              <CardContent className="p-4">
-                <div className="text-xs text-muted-foreground mb-1">Preț de la:</div>
-                <div className="text-xl font-bold text-primary">
-                  {selectedProduct.priceRange || `${selectedProduct.priceFrom?.toLocaleString()} EUR`}
-                </div>
-                <div className="text-xs text-muted-foreground mt-1">TVA inclus</div>
-              </CardContent>
-            </Card>
+            {/* Price */}
+            <div className="space-y-1">
+              <div className="text-3xl font-bold text-destructive">
+                €1,125.00 <span className="text-base font-normal text-muted-foreground">excl. VAT</span>
+              </div>
+            </div>
 
-            {/* Butoane de acțiune */}
+            {/* Model Selector */}
             <div className="space-y-3">
-              <Button size="lg" className="w-full bg-primary hover:bg-primary/90">
-                <ShoppingCart className="w-4 h-4 mr-2" />
-                Adaugă în Coș
-              </Button>
-              <Button variant="outline" size="lg" className="w-full border-primary/30 text-primary hover:bg-primary/5">
-                <Phone className="w-4 h-4 mr-2" />
-                Solicită Ofertă Personalizată
-              </Button>
               <div className="flex gap-2">
-                <Button variant="ghost" size="sm" className="flex-1">
-                  <Heart className="w-4 h-4 mr-1" />
-                  Favorite
-                </Button>
-                <Button variant="ghost" size="sm" className="flex-1">
-                  <Share2 className="w-4 h-4 mr-1" />
-                  Distribuie
-                </Button>
-                <Button variant="ghost" size="sm" className="flex-1">
-                  <FileText className="w-4 h-4 mr-1" />
-                  PDF
-                </Button>
+                {agfProducts.map((product) => {
+                  const modelName = product.name.replace('Boxer ', '').replace(' Cositor cu Braț', '');
+                  return (
+                    <Button
+                      key={product.id}
+                      variant={selectedProduct.id === product.id ? "default" : "outline"}
+                      size="sm"
+                      className={selectedProduct.id === product.id ? "bg-destructive hover:bg-destructive/90" : ""}
+                      onClick={() => handleProductChange(product)}
+                    >
+                      {modelName}
+                    </Button>
+                  );
+                })}
               </div>
             </div>
 
-            {/* Shipping & Support */}
-            <div className="space-y-3 pt-4 border-t border-border/50">
-              <div className="flex items-center gap-3 text-sm">
-                <Truck className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground">Transport gratuit în România</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
-                <CheckCircle className="w-4 h-4 text-green-600" />
-                <span className="text-muted-foreground">Garanție 12 luni</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
-                <Settings className="w-4 h-4 text-blue-600" />
-                <span className="text-muted-foreground">Service autorizat</span>
+            {/* Add to Quote Basket */}
+            <Button size="lg" className="w-full bg-destructive hover:bg-destructive/90 text-white font-semibold">
+              ADD TO QUOTE BASKET
+            </Button>
+
+            {/* Downloads Section */}
+            <div className="space-y-3">
+              <h3 className="font-semibold text-foreground">Downloads</h3>
+              <div className="grid grid-cols-2 gap-3">
+                <Button variant="outline" className="flex items-center justify-start gap-2 h-auto py-3">
+                  <FileText className="w-4 h-4" />
+                  <span className="text-sm">PRODUCT SHEET</span>
+                </Button>
+                <Button variant="outline" className="flex items-center justify-start gap-2 h-auto py-3">
+                  <FileText className="w-4 h-4" />
+                  <span className="text-sm">CATALOGUE</span>
+                </Button>
+                <Button variant="outline" className="flex items-center justify-start gap-2 h-auto py-3">
+                  <FileText className="w-4 h-4" />
+                  <span className="text-sm">MANUAL</span>
+                </Button>
+                <Button variant="outline" className="flex items-center justify-start gap-2 h-auto py-3">
+                  <Settings className="w-4 h-4" />
+                  <span className="text-sm">SPARE PARTS</span>
+                </Button>
               </div>
             </div>
-
-            {/* Quick Specs */}
-            <Card>
-              <CardHeader className="pb-2">
-                <CardTitle className="text-sm flex items-center gap-2">
-                  <Info className="w-4 h-4" />
-                  Specificații Rapide
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="pt-0 space-y-2">
-                {Object.entries(selectedProduct.technicalData).slice(0, 3).map(([key, value]) => (
-                  <div key={key} className="flex justify-between text-xs">
-                    <span className="text-muted-foreground">{key}:</span>
-                    <span className="font-medium">{value}</span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            {/* Contact Card */}
-            <Card className="bg-gradient-to-r from-blue-50 to-blue-50/50 border-blue-200">
-              <CardContent className="p-4">
-                <h3 className="font-semibold mb-3 text-blue-900">Contactează Specialistul</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-blue-600" />
-                    <span className="text-blue-800">+40 742 123 456</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-blue-600" />
-                    <span className="text-blue-800">comenzi@heustractors.ro</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
 
