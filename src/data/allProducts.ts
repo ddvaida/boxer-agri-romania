@@ -52,7 +52,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
     },
     images: [
       'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
-      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-5.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-3.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-1.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
     features: [
@@ -93,7 +96,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 310
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-4.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-2.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
     features: [
@@ -133,7 +139,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 385
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-7.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-8.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
     features: [
@@ -174,7 +183,11 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 465
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-3.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-9.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
     features: [
@@ -215,7 +228,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 180
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie-2.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie-3.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie-4.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
     features: [
@@ -255,7 +271,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 220
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie-5.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie-6.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie-7.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
     features: [
@@ -297,7 +316,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 240
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding2.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding3.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-2.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
     features: [
@@ -337,7 +359,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 310
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding4.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding5.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-4.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
     features: [
@@ -379,7 +404,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 195
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding6.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding7.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-5.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
     features: [
@@ -419,7 +447,10 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 235
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding8.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding9.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-7.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
     features: [
@@ -464,7 +495,10 @@ export const soilCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 165
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding10.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding11.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding12.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
     features: [
@@ -504,7 +538,10 @@ export const soilCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 195
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding13.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding14.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding15.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
     features: [
@@ -546,7 +583,10 @@ export const soilCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 320
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding16.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding17.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding18.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
     features: [
@@ -587,7 +627,10 @@ export const soilCultivationProducts: DetailedProduct[] = [
       'Greutate (kg)': 280
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding19.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding20.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-8.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
     features: [
@@ -631,7 +674,10 @@ export const forestryMachineryProducts: DetailedProduct[] = [
       'Greutate (kg)': 95
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2'
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106-2.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106-3.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106-4.png?v=1-2'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
     features: [
@@ -671,7 +717,10 @@ export const forestryMachineryProducts: DetailedProduct[] = [
       'Greutate (kg)': 125
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2'
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV108-1.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV108-2.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV108-3.png?v=1-2'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
     features: [
@@ -713,7 +762,10 @@ export const forestryMachineryProducts: DetailedProduct[] = [
       'Adâncime pătrundere (cm)': 25
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2'
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HM180-1.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HM180-2.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HM180-3.png?v=1-2'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
     features: [
@@ -753,7 +805,10 @@ export const forestryMachineryProducts: DetailedProduct[] = [
       'Greutate (kg)': 180
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2'
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HS140-1.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HS140-2.png?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_list/06/2196-HS140-3.png?v=1-2'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
     features: [
@@ -796,7 +851,10 @@ export const spreadingSeedingProducts: DetailedProduct[] = [
       'Material rezervor': 'Inox AISI 304'
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-FS300-1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-FS300-2.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-FS300-3.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
     features: [
@@ -836,7 +894,10 @@ export const spreadingSeedingProducts: DetailedProduct[] = [
       'Adâncime semănat (cm)': '1-6'
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1'
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-SEED250-1.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-SEED250-2.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_list/08/1878-SEED250-3.png?v=1-1'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding1.png?v=1-1',
     features: [
@@ -882,7 +943,10 @@ export const excavatorProducts: DetailedProduct[] = [
     },
     images: [
       'https://www.heustractors.com/uploads/media/product_list/08/2918-XE18E-06.png?v=1-3',
-      'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E%20knip-3.png?v=1-4'
+      'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E%20knip-3.png?v=1-4',
+      'https://www.heustractors.com/uploads/media/product_list/08/2918-XE18E-01.png?v=1-3',
+      'https://www.heustractors.com/uploads/media/product_list/08/2918-XE18E-02.png?v=1-3',
+      'https://www.heustractors.com/uploads/media/product_list/08/2918-XE18E-03.png?v=1-3'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/2918-XE18E-06.png?v=1-3',
     features: [
@@ -931,7 +995,10 @@ export const excavatorProducts: DetailedProduct[] = [
       'Capacitate cupă (L)': 100
     },
     images: [
-      'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E%20knip-3.png?v=1-4'
+      'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E%20knip-3.png?v=1-4',
+      'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E-01.png?v=1-4',
+      'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E-02.png?v=1-4',
+      'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E-03.png?v=1-4'
     ],
     mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/1135-XE27E%20knip-3.png?v=1-4',
     features: [

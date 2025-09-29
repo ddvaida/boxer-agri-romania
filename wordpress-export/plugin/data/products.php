@@ -23,7 +23,11 @@ return array(
             'Greutate (kg)' => 285
         ),
         'images' => array(
-            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-5.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-3.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-1.png?v=1-1'
         ),
         'mainImage' => 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
         'features' => array(
@@ -64,7 +68,10 @@ return array(
             'Greutate (kg)' => 310
         ),
         'images' => array(
-            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-4.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-2.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1'
         ),
         'mainImage' => 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
         'features' => array(
@@ -83,7 +90,7 @@ return array(
         'availability' => 'in-stock',
         'tags' => array('cositor', 'braț', '140cm', 'professional'),
         'weight' => 310
-    )
+    ),
     
     // COSITORI CU DISCURI - DM SERIES
     array(
@@ -104,7 +111,10 @@ return array(
             'Greutate (kg)' => 180
         ),
         'images' => array(
-            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding2.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding3.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-2.png?v=1-1'
         ),
         'mainImage' => 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
         'features' => array(
@@ -143,7 +153,10 @@ return array(
             'Greutate (kg)' => 290
         ),
         'images' => array(
-            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+            'https://www.heustractors.com/uploads/media/product_list/01/1661-NEX-serie%20%282%29.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding6.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/08/1878-Afbeelding7.png?v=1-1',
+            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-5.png?v=1-1'
         ),
         'mainImage' => 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
         'features' => array(
@@ -182,7 +195,10 @@ return array(
             'Greutate (kg)' => 650
         ),
         'images' => array(
-            'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1'
+            'https://www.heustractors.com/uploads/media/product_list/06/2196-HV106%20uitgesneden.png?v=1-2',
+            'https://www.heustractors.com/uploads/media/product_list/06/2196-HM180-1.png?v=1-2',
+            'https://www.heustractors.com/uploads/media/product_list/06/2196-HM180-2.png?v=1-2',
+            'https://www.heustractors.com/uploads/media/product_list/06/2196-HM180-3.png?v=1-2'
         ),
         'mainImage' => 'https://www.heustractors.com/uploads/media/product_list/02/1872-AGF220-6.png?v=1-1',
         'features' => array(
