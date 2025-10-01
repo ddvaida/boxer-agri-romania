@@ -8,12 +8,45 @@ import { ArrowLeft, ArrowRight, Phone, Mail, Star, CheckCircle, Truck, Info, Set
 import { grasslandCultivationProducts } from '@/data/allProducts';
 
 const BoxerAGFSeries = () => {
+  // Organizăm produsele pe serii
   const agfProducts = grasslandCultivationProducts.filter(product => 
     product.id.includes('boxer-agf')
   );
+  
+  const nexProducts = grasslandCultivationProducts.filter(product => 
+    product.id.includes('boxer-nex')
+  );
+  
+  const dmProducts = grasslandCultivationProducts.filter(product => 
+    product.id.includes('boxer-dm')
+  );
+  
+  const fmProducts = grasslandCultivationProducts.filter(product => 
+    product.id.includes('boxer-fm')
+  );
 
+  const [selectedSeries, setSelectedSeries] = useState<'agf' | 'nex' | 'dm' | 'fm'>('agf');
   const [selectedProduct, setSelectedProduct] = useState(agfProducts[0]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // Determinăm produsele pentru seria selectată
+  const currentSeriesProducts = useMemo(() => {
+    switch (selectedSeries) {
+      case 'agf': return agfProducts;
+      case 'nex': return nexProducts;
+      case 'dm': return dmProducts;
+      case 'fm': return fmProducts;
+      default: return agfProducts;
+    }
+  }, [selectedSeries]);
+
+  // Actualizăm produsul selectat când se schimbă seria
+  React.useEffect(() => {
+    if (currentSeriesProducts.length > 0) {
+      setSelectedProduct(currentSeriesProducts[0]);
+      setCurrentImageIndex(0);
+    }
+  }, [selectedSeries]);
 
   const handleProductChange = (product: typeof selectedProduct) => {
     setSelectedProduct(product);
@@ -52,8 +85,47 @@ const BoxerAGFSeries = () => {
           <span className="text-muted-foreground">/</span>
           <a href="/utilaje-agricole" className="text-muted-foreground hover:text-primary transition-colors">Agricultural Machinery</a>
           <span className="text-muted-foreground">/</span>
-          <span className="text-primary font-medium">Boxer FA rotary mower</span>
+          <span className="text-primary font-medium">Cultivarea Pajiștilor</span>
         </nav>
+
+        {/* Series Selector */}
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold mb-4">Selectează Seria</h2>
+          <div className="flex flex-wrap gap-3">
+            <Button
+              variant={selectedSeries === 'agf' ? 'default' : 'outline'}
+              size="lg"
+              className={selectedSeries === 'agf' ? 'bg-primary' : ''}
+              onClick={() => setSelectedSeries('agf')}
+            >
+              Seria AGF - Cositori cu Braț ({agfProducts.length})
+            </Button>
+            <Button
+              variant={selectedSeries === 'nex' ? 'default' : 'outline'}
+              size="lg"
+              className={selectedSeries === 'nex' ? 'bg-primary' : ''}
+              onClick={() => setSelectedSeries('nex')}
+            >
+              Seria NEX - Cositori Rotative ({nexProducts.length})
+            </Button>
+            <Button
+              variant={selectedSeries === 'dm' ? 'default' : 'outline'}
+              size="lg"
+              className={selectedSeries === 'dm' ? 'bg-primary' : ''}
+              onClick={() => setSelectedSeries('dm')}
+            >
+              Seria DM - Cositori cu Discuri ({dmProducts.length})
+            </Button>
+            <Button
+              variant={selectedSeries === 'fm' ? 'default' : 'outline'}
+              size="lg"
+              className={selectedSeries === 'fm' ? 'bg-primary' : ''}
+              onClick={() => setSelectedSeries('fm')}
+            >
+              Seria FM - Cositori cu Ciocanele ({fmProducts.length})
+            </Button>
+          </div>
+        </div>
 
         {/* Main Product Layout */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
@@ -121,26 +193,22 @@ const BoxerAGFSeries = () => {
           <div className="space-y-6">
             {/* Product Title */}
             <div>
-              <h1 className="text-3xl font-bold text-foreground mb-4">Boxer FA rotary mower</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-4">{selectedProduct.name}</h1>
               <p className="text-muted-foreground text-base leading-relaxed mb-4">
-                The Boxer FA rotary mower is extremely suitable for use behind compact tractors 
-                and medium-sized tractors. This makes this mower highly suitable for lawns, parks, 
-                meadows and sports fields. The rotary mower is equipped with 3 cutting blades 
-                and the cutting height is adjustable by adjusting the 4 wheels. In addition, the 
-                grass is ejected at the rear.
+                {selectedProduct.description}
               </p>
 
-              {/* Key Features */}
-              <div className="space-y-2 mb-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm">Comes complete with power take-off.</span>
+              {/* Key Features - primele 3 */}
+              {selectedProduct.features.length > 0 && (
+                <div className="space-y-2 mb-4">
+                  {selectedProduct.features.slice(0, 3).map((feature, index) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-sm">{feature}</span>
+                    </div>
+                  ))}
                 </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm">Supplied as a package (assembly time 1 hour).</span>
-                </div>
-              </div>
+              )}
 
               {/* Read More Link */}
               <Button variant="link" className="p-0 h-auto text-destructive font-semibold">
@@ -151,15 +219,19 @@ const BoxerAGFSeries = () => {
             {/* Price */}
             <div className="space-y-1">
               <div className="text-3xl font-bold text-destructive">
-                €1,125.00 <span className="text-base font-normal text-muted-foreground">excl. VAT</span>
+                {selectedProduct.priceFrom && `€${selectedProduct.priceFrom.toLocaleString()}`}
+                {selectedProduct.priceRange && ` (${selectedProduct.priceRange})`}
+                <span className="text-base font-normal text-muted-foreground ml-2">excl. VAT</span>
               </div>
             </div>
 
             {/* Model Selector */}
             <div className="space-y-3">
-              <div className="flex gap-2">
-                {agfProducts.map((product) => {
-                  const modelName = product.name.replace('Boxer ', '').replace(' Cositor cu Braț', '');
+              <h3 className="font-semibold text-sm text-muted-foreground">Selectează Modelul</h3>
+              <div className="flex flex-wrap gap-2">
+                {currentSeriesProducts.map((product) => {
+                  // Extragem modelul din ID (de ex: AGF120, NEX150, DM160)
+                  const modelName = product.id.replace('boxer-', '').toUpperCase();
                   return (
                     <Button
                       key={product.id}
