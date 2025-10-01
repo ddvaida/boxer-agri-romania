@@ -159,7 +159,7 @@ const BoxerAGFSeries = () => {
                 <ChevronLeft className="w-4 h-4" />
               </Button>
               
-              <div className="flex gap-2 overflow-hidden flex-1">
+              <div className="flex gap-2 overflow-x-auto flex-1 pb-2" style={{ scrollbarWidth: 'thin' }}>
                 {selectedProduct.images.map((image, index) => (
                   <div 
                     key={index} 
@@ -171,7 +171,11 @@ const BoxerAGFSeries = () => {
                     <img 
                       src={image}
                       alt={`${selectedProduct.name} ${index + 1}`}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain p-1"
+                      onError={(e) => {
+                        console.error('Failed to load image:', image);
+                        e.currentTarget.style.display = 'none';
+                      }}
                     />
                   </div>
                 ))}
