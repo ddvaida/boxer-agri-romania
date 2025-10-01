@@ -1,0 +1,56 @@
+/**
+ * Elementor Editor Styles for HeusTractors Widgets
+ */
+
+/* Widget Icons in Elementor Panel */
+.elementor-element .icon .eicon-slider-push,
+.elementor-element .icon .eicon-products,
+.elementor-element .icon .eicon-gallery-grid,
+.elementor-element .icon .eicon-archive,
+.elementor-element .icon .eicon-header,
+.elementor-element .icon .eicon-footer {
+    color: #2c5f2d;
+}
+
+/* HeusTractors Category Highlight */
+.elementor-element .elementor-widget-heustractors_hero,
+.elementor-element .elementor-widget-heustractors_products,
+.elementor-element .elementor-widget-heustractors_boxer_series,
+.elementor-element .elementor-widget-heustractors_inventory,
+.elementor-element .elementor-widget-heustractors_header,
+.elementor-element .elementor-widget-heustractors_footer {
+    border-left: 3px solid #2c5f2d;
+}
+
+/* Widget Preview in Editor */
+.heustractors-widget {
+    min-height: 100px;
+    background: #f5f5f5;
+    border: 2px dashed #2c5f2d;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.heustractors-widget::before {
+    content: "HeusTractors Component";
+    color: #2c5f2d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Loading State */
+.heustractors-widget.loading {
+    opacity: 0.6;
+}
+
+.heustractors-widget.loading::after {
+    content: "Loading...";
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}

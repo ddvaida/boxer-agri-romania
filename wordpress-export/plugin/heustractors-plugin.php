@@ -155,6 +155,9 @@ class HeusTractorsPlugin {
 // Initialize plugin
 new HeusTractorsPlugin();
 
+// Load Elementor Integration
+require_once plugin_dir_path(__FILE__) . 'class-elementor-integration.php';
+
 // Activation hook
 register_activation_hook(__FILE__, 'heustractors_activate');
 function heustractors_activate() {
