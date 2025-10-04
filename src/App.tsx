@@ -16,6 +16,11 @@ import Inventory from "./pages/Inventory";
 import Tractors from "./pages/Tractors";
 import ProductDetail from "./pages/ProductDetail";
 import BoxerAGFSeries from "./pages/BoxerAGFSeries";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import FAQ from "./pages/FAQ";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +37,11 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/despre" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/stiri" element={<Blog />} />
+              <Route path="/intrebari-frecvente" element={<FAQ />} />
+              <Route path="/politica-confidentialitate" element={<PrivacyPolicy />} />
+              <Route path="/termeni-conditii" element={<Terms />} />
               <Route path="/second-hand" element={<SecondHand />} />
               <Route path="/utilaje-agricole" element={<AgriculturalMachinery />} />
               <Route path="/utilaje-agricole/cultivarea-pajistilor" element={<GrasslandCultivation />} />

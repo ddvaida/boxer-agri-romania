@@ -54,6 +54,9 @@ class HeusTractors_Elementor_Integration {
             'inventory-widget.php' => 'Elementor_HeusTractors_Inventory_Widget',
             'header-widget.php' => 'Elementor_HeusTractors_Header_Widget',
             'footer-widget.php' => 'Elementor_HeusTractors_Footer_Widget',
+            'contact-widget.php' => 'Elementor_HeusTractors_Contact_Widget',
+            'blog-widget.php' => 'Elementor_HeusTractors_Blog_Widget',
+            'faq-widget.php' => 'Elementor_HeusTractors_FAQ_Widget',
         ];
         
         foreach ($widgets as $file => $class) {
