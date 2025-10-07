@@ -57,6 +57,12 @@ class HeusTractors_Elementor_Integration {
             'contact-widget.php' => 'Elementor_HeusTractors_Contact_Widget',
             'blog-widget.php' => 'Elementor_HeusTractors_Blog_Widget',
             'faq-widget.php' => 'Elementor_HeusTractors_FAQ_Widget',
+            'agricultural-machinery-widget.php' => 'Elementor_HeusTractors_Agricultural_Machinery_Widget',
+            'forestry-machinery-widget.php' => 'Elementor_HeusTractors_Forestry_Machinery_Widget',
+            'grassland-cultivation-widget.php' => 'Elementor_HeusTractors_Grassland_Cultivation_Widget',
+            'soil-cultivation-widget.php' => 'Elementor_HeusTractors_Soil_Cultivation_Widget',
+            'tractors-widget.php' => 'Elementor_HeusTractors_Tractors_Widget',
+            'about-widget.php' => 'Elementor_HeusTractors_About_Widget',
         ];
         
         foreach ($widgets as $file => $class) {
