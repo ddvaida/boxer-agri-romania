@@ -1,14 +1,15 @@
-import { useState } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useState, useMemo, useEffect } from 'react';
+import { useParams, Link, Navigate, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ArrowLeft, ArrowRight, Heart, Share2, Download, Phone, Mail, MapPin } from 'lucide-react';
-import { getProductById } from '@/data/allProducts';
+import { getProductById, getProductsByCategory, DetailedProduct } from '@/data/allProducts';
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   if (!id) {
@@ -30,6 +31,43 @@ const ProductDetail = () => {
       </div>
     );
   }
+
+  // Get product variants from the same subcategory
+  const productVariants = useMemo(() => {
+    const allProducts = getProductsByCategory(product.category, product.subcategory);
+    
+    // Extract base series name (e.g., "Boxer AGF120" -> "AGF", "Boxer NEX120" -> "NEX")
+    const getBaseSeries = (name: string) => {
+      const match = name.match(/(AGF|NEX|DM|FM|HM)/);
+      return match ? match[1] : null;
+    };
+
+    const currentSeries = getBaseSeries(product.name);
+    if (!currentSeries) return [product];
+
+    // Filter products from the same series
+    return allProducts.filter(p => {
+      const series = getBaseSeries(p.name);
+      return series === currentSeries;
+    }).sort((a, b) => {
+      // Sort by working width or model number
+      const getSize = (name: string) => {
+        const match = name.match(/\d+/);
+        return match ? parseInt(match[0]) : 0;
+      };
+      return getSize(a.name) - getSize(b.name);
+    });
+  }, [product.category, product.subcategory, product.name]);
+
+  const handleVariantChange = (variantId: string) => {
+    navigate(`/produs/${variantId}`);
+    setCurrentImageIndex(0);
+  };
+
+  // Reset image index when product changes
+  useEffect(() => {
+    setCurrentImageIndex(0);
+  }, [id]);
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % product.images.length);
@@ -131,6 +169,31 @@ const ProductDetail = () => {
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 {product.description}
               </p>
+
+              {/* Variant Selector */}
+              {productVariants.length > 1 && (
+                <div className="mb-6">
+                  <h3 className="text-sm font-semibold mb-3 text-muted-foreground">Selectează Modelul:</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {productVariants.map((variant) => (
+                      <Button
+                        key={variant.id}
+                        variant={variant.id === product.id ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => handleVariantChange(variant.id)}
+                        className="min-w-[100px]"
+                      >
+                        {variant.name.match(/\d+/)?.[0] || variant.name}
+                        {variant.priceFrom && (
+                          <span className="ml-2 text-xs opacity-75">
+                            de la {variant.priceFrom.toLocaleString()} EUR
+                          </span>
+                        )}
+                      </Button>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {product.priceRange && (
                 <div className="text-2xl font-bold text-primary mb-6">
