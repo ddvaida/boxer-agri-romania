@@ -471,6 +471,385 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
     isFeatured: true,
     tags: ['cositor', 'ciocanele', 'heavy-duty', 'industrial'],
     weight: 235
+  },
+
+  // PRODUSE REALE DE PE SITE - Real Products from Website
+  {
+    id: 'boxer-fa',
+    name: 'Boxer FA Cositor Rotativ',
+    nameEn: 'Boxer FA Rotary Mower',
+    description: 'Cositor rotativ compact pentru întreținerea spațiilor verzi mici și grădini.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1125,
+    priceRange: '1.125 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Numărul de lame': 2,
+      'Greutate (kg)': 75
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/252-FA%20uitgesneden-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/252-FA%20uitgesneden-1.png?v=1-2',
+    features: [
+      'Design compact',
+      'Mentenanță simplă',
+      'Tăiere uniformă',
+      'Preț accesibil'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-25',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'rotativ', 'compact', 'grădină'],
+    weight: 75
+  },
+
+  {
+    id: 'boxer-fag',
+    name: 'Boxer FAG Cositor Rotativ',
+    nameEn: 'Boxer FAG Rotary Mower',
+    description: 'Cositor rotativ îmbunătățit cu sistem de siguranță avansat.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1325,
+    priceRange: '1.325 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Numărul de lame': 2,
+      'Greutate (kg)': 82
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/251-FAG%20uitgesneden.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/251-FAG%20uitgesneden.png?v=1-2',
+    features: [
+      'Sistem de siguranță îmbunătățit',
+      'Construcție robustă',
+      'Finisaj de calitate'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-28',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0/I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'rotativ', 'siguranță'],
+    weight: 82
+  },
+
+  {
+    id: 'boxer-fa-xl',
+    name: 'Boxer FA XL Cositor Rotativ',
+    nameEn: 'Boxer FA XL Rotary Mower',
+    description: 'Cositor rotativ mărit pentru suprafețe mai mari.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2100,
+    priceRange: '2.100 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 150,
+      'Numărul de lame': 3,
+      'Greutate (kg)': 125
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/215-FA%20XL%20uitgesneden-2.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/215-FA%20XL%20uitgesneden-2.png?v=1-2',
+    features: [
+      'Lățime sporită de lucru',
+      'Productivitate ridicată',
+      'Tăiere profesională'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'rotativ', 'xl', 'profesional'],
+    weight: 125
+  },
+
+  {
+    id: 'boxer-lm',
+    name: 'Boxer LM Cositor Rotativ Hydraulic',
+    nameEn: 'Boxer LM Hydraulic Rotary Mower',
+    description: 'Cositor rotativ cu acționare hydraulică pentru control precis.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2200,
+    priceRange: '2.200 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 135,
+      'Numărul de lame': 3,
+      'Greutate (kg)': 145
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/257-Boxer%20LM%20uitgesneden.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/257-Boxer%20LM%20uitgesneden.png?v=1-1',
+    features: [
+      'Acționare hydraulică',
+      'Control precis',
+      'Eficiență sporită'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-45',
+      'Tip atașare': 'Trei puncte Cat I',
+      'Presiune hidraulică (bar)': 180
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'hydraulic', 'rotativ'],
+    weight: 145
+  },
+
+  {
+    id: 'boxer-fmu',
+    name: 'Boxer FMU Cositor Rotativ',
+    nameEn: 'Boxer FMU Rotary Mower',
+    description: 'Cositor rotativ universal pentru diverse aplicații.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2550,
+    priceRange: '2.550 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 165,
+      'Numărul de lame': 3,
+      'Greutate (kg)': 165
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/277-FMU%20uitgesneden-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/277-FMU%20uitgesneden-1.png?v=1-2',
+    features: [
+      'Design universal',
+      'Aplicații multiple',
+      'Performanță constantă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'rotativ', 'universal'],
+    weight: 165
+  },
+
+  {
+    id: 'boxer-fmu-d',
+    name: 'Boxer FMU Cositor Rotativ cu Denker',
+    nameEn: 'Boxer FMU Rotary Mower with Denker',
+    description: 'Cositor rotativ cu sistem denker pentru finisaj superior.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2920,
+    priceRange: '2.920 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 165,
+      'Numărul de lame': 3,
+      'Greutate (kg)': 185
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/280-FMU-D%20uitgesneden-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/280-FMU-D%20uitgesneden-1.png?v=1-2',
+    features: [
+      'Sistem denker integrat',
+      'Finisaj superior',
+      'Calitate profesională'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-55',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'rotativ', 'denker', 'finisaj'],
+    weight: 185
+  },
+
+  // FLAIL MOWERS - Cositori cu Ciocanele
+  {
+    id: 'boxer-ef',
+    name: 'Boxer EF Cositor cu Ciocanele',
+    nameEn: 'Boxer EF Flail Mower',
+    description: 'Cositor cu ciocanele economic pentru întreținerea básică.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1360,
+    priceRange: '1.360 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 105,
+      'Numărul de ciocanele': 28,
+      'Greutate (kg)': 95
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/410-EF_175.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/410-EF_175.png?v=1-0',
+    features: [
+      'Preț accesibil',
+      'Construcție solidă',
+      'Mentenanță simplă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '18-30',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0/I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'ciocanele', 'economic'],
+    weight: 95
+  },
+
+  {
+    id: 'boxer-g2',
+    name: 'Boxer G2 Cositor cu Ciocanele',
+    nameEn: 'Boxer G2 Flail Mower',
+    description: 'Cositor cu ciocanele de înaltă performanță pentru lucrări profesionale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 3595,
+    priceRange: '3.595 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Numărul de ciocanele': 48,
+      'Greutate (kg)': 285
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/417-G-2%20%283%29.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/417-G-2%20%283%29.png?v=1-2',
+    features: [
+      'Performanță ridicată',
+      'Construcție robustă',
+      'Pentru lucrări intensive'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '40-60',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'ciocanele', 'profesional', 'performanță'],
+    weight: 285
+  },
+
+  {
+    id: 'boxer-master-h',
+    name: 'Boxer Master H Cositor cu Ciocanele',
+    nameEn: 'Boxer Master H Flail Mower',
+    description: 'Cositor cu ciocanele din seria Master pentru aplicații heavy-duty.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2165,
+    priceRange: '2.165 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 155,
+      'Numărul de ciocanele': 42,
+      'Greutate (kg)': 215
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/425-Klepelmaaier%20Boxer%20master%20h.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/425-Klepelmaaier%20Boxer%20master%20h.png?v=1-2',
+    features: [
+      'Seria Master',
+      'Heavy-duty',
+      'Durabilitate extremă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'ciocanele', 'master', 'heavy-duty'],
+    weight: 215
+  },
+
+  {
+    id: 'boxer-master-m',
+    name: 'Boxer Master M Cositor cu Ciocanele',
+    nameEn: 'Boxer Master M Flail Mower',
+    description: 'Cositor cu ciocanele Master M pentru ferme mici și medii.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1650,
+    priceRange: '1.650 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 125,
+      'Numărul de ciocanele': 34,
+      'Greutate (kg)': 155
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/426-Klepelmaaier%20Boxer%20master%20m%20125.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/426-Klepelmaaier%20Boxer%20master%20m%20125.png?v=1-2',
+    features: [
+      'Dimensiuni medii',
+      'Versatilitate',
+      'Raport calitate-preț'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'ciocanele', 'master', 'versatil'],
+    weight: 155
+  },
+
+  {
+    id: 'boxer-wlf',
+    name: 'Boxer WLF Cositor cu Ciocanele Hydraulic',
+    nameEn: 'Boxer WLF Hydraulic Flail Mower',
+    description: 'Cositor cu ciocanele cu acționare hydraulică pentru control maxim.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 3120,
+    priceRange: '3.120 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 165,
+      'Numărul de ciocanele': 44,
+      'Greutate (kg)': 245
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/485-WLF%20uitgesneden-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/485-WLF%20uitgesneden-1.png?v=1-2',
+    features: [
+      'Acționare hydraulică',
+      'Control maxim',
+      'Eficiență sporită'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-55',
+      'Tip atașare': 'Trei puncte Cat I',
+      'Presiune hidraulică (bar)': 180
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'ciocanele', 'hydraulic'],
+    weight: 245
   }
 ];
 

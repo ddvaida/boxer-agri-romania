@@ -132,9 +132,9 @@ allProducts.forEach(product => {
 
 // Salvăm fișierul
 const csvContent = csvLines.join('\n');
-writeFileSync('./public/products-complete-export.csv', csvContent, 'utf-8');
+writeFileSync('./public/products-export.csv', csvContent, 'utf-8');
 
 console.log(`✅ Export finalizat!`);
 console.log(`📊 Total produse exportate: ${allProducts.length}`);
-console.log(`📁 Fișier: public/products-complete-export.csv`);
+console.log(`📁 Fișier: public/products-export.csv`);
 console.log(`📋 Coloane: ${headers.length}`);
