@@ -850,6 +850,147 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
     availability: 'in-stock',
     tags: ['cositor', 'ciocanele', 'hydraulic'],
     weight: 245
+  },
+
+  // MEADOW BLOWERS - Suflătoare pentru Pajiști
+  {
+    id: 'boxer-bl',
+    name: 'Boxer BL Suflător pentru Pajiști',
+    nameEn: 'Boxer BL Meadow Blower',
+    description: 'Suflător pentru pajiști compact pentru curățarea și întreținerea zonelor verzi.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    price: 1610,
+    priceRange: '1.610 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Putere ventilator (m³/h)': 850,
+      'Greutate (kg)': 95
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/323-BL%20%286%29.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/323-BL%20%286%29.png?v=1-2',
+    features: [
+      'Design compact',
+      'Flux de aer puternic',
+      'Ușor de manevrat',
+      'Ideal pentru curățare'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-25',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0/I'
+    },
+    availability: 'in-stock',
+    tags: ['suflător', 'pajiște', 'curățare', 'compact'],
+    weight: 95
+  },
+
+  {
+    id: 'boxer-blg',
+    name: 'Boxer BLG Suflător pentru Pajiști',
+    nameEn: 'Boxer BLG Meadow Blower',
+    description: 'Suflător pentru pajiști cu sistem de colectare îmbunătățit.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1600,
+    priceRange: '1.600 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 125,
+      'Putere ventilator (m³/h)': 900,
+      'Greutate (kg)': 105
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/336-BLG%20uitgesneden.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/336-BLG%20uitgesneden.png?v=1-2',
+    features: [
+      'Sistem de colectare',
+      'Eficiență ridicată',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '18-30',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['suflător', 'pajiște', 'colectare'],
+    weight: 105
+  },
+
+  {
+    id: 'boxer-wb',
+    name: 'Boxer WB Suflător pentru Pajiști',
+    nameEn: 'Boxer WB Meadow Blower',
+    description: 'Suflător profesional pentru pajiști cu performanță ridicată.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2435,
+    priceRange: '2.435 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Putere ventilator (m³/h)': 1200,
+      'Greutate (kg)': 165
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/375-WB275-02.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/375-WB275-02.png?v=1-2',
+    features: [
+      'Performanță profesională',
+      'Capacitate mare',
+      'Durabilitate sporită'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['suflător', 'pajiște', 'profesional', 'performanță'],
+    weight: 165
+  },
+
+  {
+    id: 'boxer-wb-xl',
+    name: 'Boxer WB XL-XXL Suflător pentru Pajiști',
+    nameEn: 'Boxer WB XL-XXL Meadow Blower',
+    description: 'Suflător extra-large pentru pajiști, ideal pentru suprafețe mari.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 3580,
+    priceRange: '3.580 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 240,
+      'Putere ventilator (m³/h)': 1600,
+      'Greutate (kg)': 225
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/357-WB%20XL.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/357-WB%20XL.png?v=1-2',
+    features: [
+      'Capacitate extra-large',
+      'Ideal pentru suprafețe mari',
+      'Productivitate maximă',
+      'Construcție heavy-duty'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '40-70',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['suflător', 'pajiște', 'xl', 'heavy-duty'],
+    weight: 225
   }
 ];
 
@@ -1029,6 +1170,480 @@ export const soilCultivationProducts: DetailedProduct[] = [
     availability: 'in-stock',
     tags: ['cultivator', 'robust', 'secundar', 'siguranță'],
     weight: 280
+  },
+
+  // PRODUSE REALE DE PE SITE - Real Soil Cultivation Products
+  {
+    id: 'boxer-pi',
+    name: 'Boxer PI Grapă Rotativă',
+    nameEn: 'Boxer PI Rotary Harrow',
+    description: 'Grapă rotativă pentru pregătirea patului germinativ.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 2250,
+    priceRange: '2.250 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 150,
+      'Adâncimea de lucru (cm)': '5-10',
+      'Greutate (kg)': 185
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/1898-boxer-rotorkopeg-%281%291.jpg?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1898-boxer-rotorkopeg-%281%291.jpg?v=1-1',
+    features: [
+      'Pregătire pat germinativ',
+      'Reglare adâncime',
+      'Design eficient'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['grapă', 'rotativă', 'germinativ'],
+    weight: 185
+  },
+
+  {
+    id: 'boxer-px',
+    name: 'Boxer PX Grapă Rotativă',
+    nameEn: 'Boxer PX Rotary Harrow',
+    description: 'Grapă rotativă îmbunătățită cu sistem de reglare avansat.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 2675,
+    priceRange: '2.675 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Adâncimea de lucru (cm)': '5-12',
+      'Greutate (kg)': 215
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/1256-PX%20MET%20EN%20ZONDER%20GAAS%20ROL.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/1256-PX%20MET%20EN%20ZONDER%20GAAS%20ROL.jpg?v=1-0',
+    features: [
+      'Sistem avansat de reglare',
+      'Performanță sporită',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['grapă', 'rotativă', 'avansat'],
+    weight: 215
+  },
+
+  {
+    id: 'boxer-zm',
+    name: 'Boxer ZM Combinator de Semănat',
+    nameEn: 'Boxer ZM Seeding Combination',
+    description: 'Combinator de semănat pentru pregătire și semănat simultan.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 5170,
+    priceRange: '5.170 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 200,
+      'Capacitate buncăr (L)': 120,
+      'Greutate (kg)': 385
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/1266-ZM%20%281%29.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/1266-ZM%20%281%29.png?v=1-0',
+    features: [
+      'Pregătire și semănat simultan',
+      'Buncăr mare',
+      'Eficiență ridicată'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '40-60',
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['combinator', 'semănat', 'eficient'],
+    weight: 385
+  },
+
+  {
+    id: 'boxer-sb-z',
+    name: 'Boxer SB-Z Combinator de Semănat',
+    nameEn: 'Boxer SB-Z Seeding Combination',
+    description: 'Combinator de semănat SB-Z pentru aplicații profesionale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 4880,
+    priceRange: '4.880 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Capacitate buncăr (L)': 100,
+      'Greutate (kg)': 355
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/1270-SB%20Z.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/1270-SB%20Z.png?v=1-0',
+    features: [
+      'Design profesional',
+      'Distribuire uniformă',
+      'Calitate superioară'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-55',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['combinator', 'semănat', 'profesional'],
+    weight: 355
+  },
+
+  {
+    id: 'boxer-phs',
+    name: 'Boxer PHS Combinator de Semănat',
+    nameEn: 'Boxer PHS Seeding Combination',
+    description: 'Combinator de semănat PHS compact și eficient.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 3950,
+    priceRange: '3.950 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 150,
+      'Capacitate buncăr (L)': 80,
+      'Greutate (kg)': 285
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/568-PHS%20Boxer.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/568-PHS%20Boxer.jpg?v=1-0',
+    features: [
+      'Compact și eficient',
+      'Ușor de manevrat',
+      'Preț accesibil'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-45',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['combinator', 'semănat', 'compact'],
+    weight: 285
+  },
+
+  {
+    id: 'boxer-mxs',
+    name: 'Boxer MXS Rotoreg',
+    nameEn: 'Boxer MXS Rotoreg',
+    description: 'Rotoreg MXS pentru pregătirea profesională a solului.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    price: 10230,
+    priceRange: '10.230 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 300,
+      'Adâncimea de lucru (cm)': '5-15',
+      'Greutate (kg)': 685
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/5926-MXS%20300-01.png?v=1-3'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/5926-MXS%20300-01.png?v=1-3',
+    features: [
+      'Lățime mare de lucru',
+      'Calitate profesională',
+      'Productivitate ridicată'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '60-100',
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['rotoreg', 'profesional', 'productivitate'],
+    weight: 685
+  },
+
+  {
+    id: 'boxer-sb',
+    name: 'Boxer SB Cultivator Overtop',
+    nameEn: 'Boxer SB Overtop Cultivator',
+    description: 'Cultivator overtop pentru prelucrare rapidă.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 2475,
+    priceRange: '2.475 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 140,
+      'Adâncimea de lucru (cm)': '10-20',
+      'Greutate (kg)': 165
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/1272-SBHD0111.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1272-SBHD0111.png?v=1-0',
+    features: [
+      'Prelucrare rapidă',
+      'Design versatil',
+      'Eficiență sporită'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cultivator', 'overtop', 'rapid'],
+    weight: 165
+  },
+
+  {
+    id: 'boxer-gf',
+    name: 'Boxer GF Cultivator Rotativ',
+    nameEn: 'Boxer GF Rotary Cultivator',
+    description: 'Cultivator rotativ compact pentru grădini și terenuri mici.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 1350,
+    priceRange: '1.350 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 105,
+      'Numărul de cuțite': 18,
+      'Greutate (kg)': 95
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/133-GF%403x.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/133-GF%403x.png?v=1-0',
+    features: [
+      'Compact și ușor',
+      'Ideal pentru grădini',
+      'Preț accesibil'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-25',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0'
+    },
+    availability: 'in-stock',
+    tags: ['cultivator', 'rotativ', 'compact', 'grădină'],
+    weight: 95
+  },
+
+  {
+    id: 'boxer-gf-t',
+    name: 'Boxer GF T Cultivator Rotativ',
+    nameEn: 'Boxer GF T Rotary Cultivator',
+    description: 'Cultivator rotativ GF T cu transmisie cu lanț.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 2175,
+    priceRange: '2.175 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 130,
+      'Numărul de cuțite': 22,
+      'Greutate (kg)': 145
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/09/1379-gf%20ketting.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/09/1379-gf%20ketting.jpg?v=1-0',
+    features: [
+      'Transmisie cu lanț',
+      'Durabilitate sporită',
+      'Performanță constantă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '20-35',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cultivator', 'rotativ', 'lanț'],
+    weight: 145
+  },
+
+  {
+    id: 'boxer-gf-ta',
+    name: 'Boxer GF TA Cultivator Rotativ',
+    nameEn: 'Boxer GF TA Rotary Cultivator',
+    description: 'Cultivator rotativ GF TA pentru aplicații profesionale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 3225,
+    priceRange: '3.225 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 160,
+      'Numărul de cuțite': 28,
+      'Greutate (kg)': 215
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/2290-GF220%20%20knip-2.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/2290-GF220%20%20knip-2.png?v=1-2',
+    features: [
+      'Aplicații profesionale',
+      'Lățime medie',
+      'Calitate superioară'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cultivator', 'rotativ', 'profesional'],
+    weight: 215
+  },
+
+  {
+    id: 'boxer-gf-xl',
+    name: 'Boxer GF XL Cultivator Rotativ',
+    nameEn: 'Boxer GF XL Rotary Cultivator',
+    description: 'Cultivator rotativ extra-large pentru terenuri mari.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 6450,
+    priceRange: '6.450 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 250,
+      'Numărul de cuțite': 42,
+      'Greutate (kg)': 485
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/2285-GF300%20knip-3.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/2285-GF300%20knip-3.png?v=1-0',
+    features: [
+      'Extra-large',
+      'Pentru terenuri mari',
+      'Productivitate maximă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '50-80',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cultivator', 'rotativ', 'xl', 'productivitate'],
+    weight: 485
+  },
+
+  {
+    id: 'boxer-d0',
+    name: 'Boxer D-0 Trencher',
+    nameEn: 'Boxer D-0 Trencher',
+    description: 'Trencher pentru săparea șanțurilor și instalații.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 4950,
+    priceRange: '4.950 EUR',
+    specifications: {
+      'Adâncimea maximă (cm)': 80,
+      'Lățimea șanț (cm)': 15,
+      'Greutate (kg)': 385
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/1381-D02%20%282%29.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1381-D02%20%282%29.png?v=1-2',
+    features: [
+      'Săpare precisă',
+      'Adâncime variabilă',
+      'Pentru instalații'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '40-60',
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['trencher', 'șanțuri', 'instalații'],
+    weight: 385
+  },
+
+  {
+    id: 'boxer-dm-digger',
+    name: 'Boxer DM Digger',
+    nameEn: 'Boxer DM Digger',
+    description: 'Digger pentru săpături și excavări mici.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 3085,
+    priceRange: '3.085 EUR',
+    specifications: {
+      'Adâncimea maximă (cm)': 60,
+      'Lățimea săpare (cm)': 25,
+      'Greutate (kg)': 245
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/1400-DM.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/1400-DM.png?v=1-0',
+    features: [
+      'Compact și manevrabil',
+      'Pentru săpături mici',
+      'Eficient'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['digger', 'săpături', 'compact'],
+    weight: 245
+  },
+
+  {
+    id: 'boxer-tca',
+    name: 'Boxer TCA Freză Rotativă',
+    nameEn: 'Boxer TCA Rotary Tiller',
+    description: 'Freză rotativă TCA pentru prelucrare profesională.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 4820,
+    priceRange: '4.820 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 220,
+      'Numărul de cuțite': 36,
+      'Greutate (kg)': 425
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/09/2289-GF250TCA.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/09/2289-GF250TCA.png?v=1-0',
+    features: [
+      'Prelucrare profesională',
+      'Lățime mare',
+      'Performanță ridicată'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '45-70',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['freză', 'rotativă', 'profesional', 'performanță'],
+    weight: 425
   }
 ];
 
@@ -1207,6 +1822,417 @@ export const forestryMachineryProducts: DetailedProduct[] = [
     availability: 'in-stock',
     tags: ['tocător', 'crengi', 'deșeuri', 'eficient'],
     weight: 180
+  },
+
+  // PRODUSE REALE DE PE SITE - Real Forestry Products
+  {
+    id: 'boxer-hv132',
+    name: 'Boxer HV132 Tocător de Lemn',
+    nameEn: 'Boxer HV132 Wood Chipper',
+    description: 'Tocător de lemn profesional de capacitate medie.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    price: 4515,
+    priceRange: '4.515 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 120,
+      'Lățimea de alimentare (mm)': 250,
+      'Greutate (kg)': 185
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/2186-HV132.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2186-HV132.png?v=1-0',
+    features: [
+      'Capacitate medie',
+      'Eficiență ridicată',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['tocător', 'lemn', 'profesional'],
+    weight: 185
+  },
+
+  {
+    id: 'boxer-hv157',
+    name: 'Boxer HV Tocător de Lemn',
+    nameEn: 'Boxer HV Wood Chippers',
+    description: 'Serie de tocătoare de lemn HV pentru diverse aplicații.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    priceFrom: 4360,
+    priceRange: '4.360 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 140,
+      'Lățimea de alimentare (mm)': 280,
+      'Greutate (kg)': 215
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/04/2184-HV157%20CL.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/04/2184-HV157%20CL.png?v=1-2',
+    features: [
+      'Serie HV versatilă',
+      'Diverse aplicații',
+      'Performanță constantă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-55',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['tocător', 'hv', 'versatil'],
+    weight: 215
+  },
+
+  {
+    id: 'boxer-hv285',
+    name: 'Boxer HV285 Tocător de Lemn',
+    nameEn: 'Boxer HV285 Wood Chipper',
+    description: 'Tocător de lemn heavy-duty pentru aplicații profesionale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    price: 8225,
+    priceRange: '8.225 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 200,
+      'Lățimea de alimentare (mm)': 400,
+      'Greutate (kg)': 485
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/2183-Afbeelding1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/2183-Afbeelding1.png?v=1-2',
+    features: [
+      'Heavy-duty',
+      'Capacitate mare',
+      'Pentru lucrări intensive'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '50-80',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['tocător', 'heavy-duty', 'profesional'],
+    weight: 485
+  },
+
+  {
+    id: 'boxer-wcl8',
+    name: 'Boxer WCL8 Tocător de Lemn',
+    nameEn: 'Boxer WCL8 Wood Chipper',
+    description: 'Tocător de lemn compact WCL8 pentru aplicații mici.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    price: 2485,
+    priceRange: '2.485 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 80,
+      'Lățimea de alimentare (mm)': 180,
+      'Greutate (kg)': 115
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/2182-Houtversnipperaar-WC8LN-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/2182-Houtversnipperaar-WC8LN-1.png?v=1-2',
+    features: [
+      'Compact și ușor',
+      'Pentru aplicații mici',
+      'Preț accesibil'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '20-35',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat 0/I'
+    },
+    availability: 'in-stock',
+    tags: ['tocător', 'compact', 'accesibil'],
+    weight: 115
+  },
+
+  {
+    id: 'boxer-hvr',
+    name: 'Boxer HVR Tocător de Lemn',
+    nameEn: 'Boxer HVR Wood Chipper',
+    description: 'Tocător de lemn HVR cu sistem de alimentare îmbunătățit.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    price: 8750,
+    priceRange: '8.750 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 180,
+      'Lățimea de alimentare (mm)': 350,
+      'Greutate (kg)': 425
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/2192-HRV110-05.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/2192-HRV110-05.png?v=1-2',
+    features: [
+      'Sistem de alimentare avansat',
+      'Performanță ridicată',
+      'Calitate profesională'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '45-75',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['tocător', 'hvr', 'avansat'],
+    weight: 425
+  },
+
+  {
+    id: 'boxer-lsp',
+    name: 'Boxer LSP Despicător de Lemne',
+    nameEn: 'Boxer LSP Log Splitter',
+    description: 'Despicător de lemne hydraulic pentru procesare rapidă.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    priceFrom: 2205,
+    priceRange: '2.205 EUR',
+    specifications: {
+      'Forța de despic are (tone)': 10,
+      'Diametrul maxim (mm)': 350,
+      'Lungime maximă (cm)': 55,
+      'Greutate (kg)': 185
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/2197-LSP.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/2197-LSP.png?v=1-2',
+    features: [
+      'Acționare hydraulică',
+      'Procesare rapidă',
+      'Design robust'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Tip atașare': 'Trei puncte Cat I',
+      'Presiune hidraulică (bar)': 200
+    },
+    availability: 'in-stock',
+    tags: ['despicător', 'lemne', 'hydraulic'],
+    weight: 185
+  },
+
+  {
+    id: 'boxer-bm',
+    name: 'Boxer BM Tocător de Copaci',
+    nameEn: 'Boxer BM Tree Cutter',
+    description: 'Tocător de copaci BM pentru silvicultură profesională.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    priceFrom: 6250,
+    priceRange: '6.250 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 200,
+      'Lățimea de lucru (cm)': 180,
+      'Greutate (kg)': 385
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/2200-BM230.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/2200-BM230.png?v=1-1',
+    features: [
+      'Pentru silvicultură',
+      'Capacitate mare',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '50-80',
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['tocător', 'copaci', 'silvicultură'],
+    weight: 385
+  },
+
+  {
+    id: 'boxer-bm-hd',
+    name: 'Boxer BM HD Tocător de Copaci',
+    nameEn: 'Boxer BM HD Tree Cutter',
+    description: 'Tocător de copaci heavy-duty pentru aplicații intensive.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    priceFrom: 11850,
+    priceRange: '11.850 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 280,
+      'Lățimea de lucru (cm)': 225,
+      'Greutate (kg)': 685
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/2202-BM225HD%20knip%203.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/2202-BM225HD%20knip%203.png?v=1-0',
+    features: [
+      'Heavy-duty',
+      'Aplicații intensive',
+      'Putere maximă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '80-120',
+      'Tip atașare': 'Trei puncte Cat II/III'
+    },
+    availability: 'on-order',
+    isFeatured: true,
+    tags: ['tocător', 'copaci', 'heavy-duty'],
+    weight: 685
+  },
+
+  {
+    id: 'boxer-bm-hd-xl',
+    name: 'Boxer BM HD XL',
+    nameEn: 'Boxer BM HD XL',
+    description: 'Tocător de copaci extra-large pentru lucrări forestiere mari.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    price: 15035,
+    priceRange: '15.035 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 350,
+      'Lățimea de lucru (cm)': 280,
+      'Greutate (kg)': 885
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/4626-BOXER%20AGRI%20DFM225%20pic4.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/4626-BOXER%20AGRI%20DFM225%20pic4.png?v=1-0',
+    features: [
+      'Extra-large',
+      'Lucrări forestiere mari',
+      'Capacitate maximă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '100-150',
+      'Tip atașare': 'Trei puncte Cat III'
+    },
+    availability: 'on-order',
+    isFeatured: true,
+    tags: ['tocător', 'xl', 'forestier'],
+    weight: 885
+  },
+
+  {
+    id: 'boxer-bm-220-super',
+    name: 'Boxer BM 220 Super Tocător de Copaci',
+    nameEn: 'Boxer BM 220 Super Tree Cutter',
+    description: 'Tocător de copaci premium din seria Super.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    price: 17200,
+    priceRange: '17.200 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 320,
+      'Lățimea de lucru (cm)': 220,
+      'Greutate (kg)': 785
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/5715-BM%20220%20Super-4.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/5715-BM%20220%20Super-4.jpg?v=1-0',
+    features: [
+      'Seria Super premium',
+      'Performanță maximă',
+      'Tehnologie avansată'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '90-140',
+      'Tip atașare': 'Trei puncte Cat II/III'
+    },
+    availability: 'on-order',
+    isFeatured: true,
+    tags: ['tocător', 'super', 'premium'],
+    weight: 785
+  },
+
+  {
+    id: 'boxer-wpl',
+    name: 'Boxer WPL Vinciuri Forestiere',
+    nameEn: 'Boxer WPL Forestry Winches',
+    description: 'Vinciuri forestiere pentru extragerea lemnului.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    priceFrom: 2400,
+    priceRange: '2.400 EUR',
+    specifications: {
+      'Forța de tracțiune (kg)': 4000,
+      'Lungimea cablului (m)': 60,
+      'Greutate (kg)': 185
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/04/2204-WPL40.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/04/2204-WPL40.png?v=1-0',
+    features: [
+      'Forță de tracțiune mare',
+      'Cablu lung',
+      'Ideal pentru extragere lemn'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['vinciuri', 'forestiere', 'extragere'],
+    weight: 185
+  },
+
+  {
+    id: 'boxer-mhv',
+    name: 'Boxer MHV Houtversnipperaar',
+    nameEn: 'Boxer MHV Houtversnipperaar',
+    description: 'Tocător de lemn MHV pentru aplicații mobile.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'forestry-machinery',
+    price: 3925,
+    priceRange: '3.925 EUR',
+    specifications: {
+      'Diametrul maxim (mm)': 110,
+      'Lățimea de alimentare (mm)': 230,
+      'Greutate (kg)': 165
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/2185-MHV%20%281%29.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/2185-MHV%20%281%29.png?v=1-2',
+    features: [
+      'Design mobil',
+      'Versatil',
+      'Ușor de transportat'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-45',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['tocător', 'mobil', 'versatil'],
+    weight: 165
   }
 ];
 
