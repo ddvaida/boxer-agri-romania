@@ -32,21 +32,22 @@ const ProductDetail = () => {
     );
   }
 
-  // Get product variants from the same subcategory
+  // Get product variants from the same subcategory and series
   const productVariants = useMemo(() => {
     const allProducts = getProductsByCategory(product.category, product.subcategory);
     
-    // Extract base series name (e.g., "Boxer AGF120" -> "AGF", "Boxer NEX120" -> "NEX")
+    // Extract base series name - more comprehensive pattern matching
     const getBaseSeries = (name: string) => {
-      const match = name.match(/(AGF|NEX|DM|FM|HM)/);
-      return match ? match[1] : null;
+      // Match common series patterns: AGF, NEX, DM, FM, HM, AGL, AGZ, BL, BLG, WB, PI, PX, ZM, etc.
+      const match = name.match(/(AGF|NEX|DM|FM|HM|AGL|AGZ|BL|BLG|WB|PI|PX|ZM|SB|PHS|MXS|GF|TCA|HV|WCL|LSP|BM|WPL|MHV)/i);
+      return match ? match[1].toUpperCase() : null;
     };
 
     const currentSeries = getBaseSeries(product.name);
     if (!currentSeries) return [product];
 
     // Filter products from the same series
-    return allProducts.filter(p => {
+    const variants = allProducts.filter(p => {
       const series = getBaseSeries(p.name);
       return series === currentSeries;
     }).sort((a, b) => {
@@ -57,6 +58,9 @@ const ProductDetail = () => {
       };
       return getSize(a.name) - getSize(b.name);
     });
+
+    // Only return variants if there's more than one product in the series
+    return variants.length > 1 ? variants : [product];
   }, [product.category, product.subcategory, product.name]);
 
   const handleVariantChange = (variantId: string) => {
@@ -173,31 +177,46 @@ const ProductDetail = () => {
               {/* Variant Selector */}
               {productVariants.length > 1 && (
                 <div className="mb-6">
-                  <h3 className="text-sm font-semibold mb-3 text-muted-foreground">Selectează Modelul:</h3>
+                  <h3 className="text-sm font-semibold mb-3 text-muted-foreground">Selectează Varianta:</h3>
                   <div className="flex flex-wrap gap-2">
-                    {productVariants.map((variant) => (
-                      <Button
-                        key={variant.id}
-                        variant={variant.id === product.id ? "default" : "outline"}
-                        size="sm"
-                        onClick={() => handleVariantChange(variant.id)}
-                        className="min-w-[100px]"
-                      >
-                        {variant.name.match(/\d+/)?.[0] || variant.name}
-                        {variant.priceFrom && (
-                          <span className="ml-2 text-xs opacity-75">
-                            de la {variant.priceFrom.toLocaleString()} EUR
-                          </span>
-                        )}
-                      </Button>
-                    ))}
+                    {productVariants.map((variant) => {
+                      const modelNumber = variant.name.match(/\d+/)?.[0];
+                      const modelName = variant.name.split(' ').slice(-1)[0]; // Get last word (e.g., "AGF120" from "Boxer AGF120")
+                      const displayName = modelNumber ? `${modelName}` : variant.name;
+                      
+                      return (
+                        <Button
+                          key={variant.id}
+                          variant={variant.id === product.id ? "default" : "outline"}
+                          size="default"
+                          onClick={() => handleVariantChange(variant.id)}
+                          className={`min-w-[90px] font-semibold ${
+                            variant.id === product.id 
+                              ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
+                              : 'hover:bg-muted'
+                          }`}
+                        >
+                          {displayName}
+                        </Button>
+                      );
+                    })}
                   </div>
                 </div>
               )}
 
-              {product.priceRange && (
-                <div className="text-2xl font-bold text-primary mb-6">
-                  {product.priceRange}
+              {/* Price Display */}
+              {(product.priceFrom || product.priceRange) && (
+                <div className="mb-6">
+                  {product.priceFrom ? (
+                    <div className="text-3xl font-bold text-primary">
+                      €{product.priceFrom.toLocaleString('ro-RO')}
+                      <span className="text-sm font-normal text-muted-foreground ml-2">excl. TVA</span>
+                    </div>
+                  ) : (
+                    <div className="text-2xl font-bold text-primary">
+                      {product.priceRange}
+                    </div>
+                  )}
                 </div>
               )}
 
@@ -216,22 +235,20 @@ const ProductDetail = () => {
 
               {/* Action Buttons */}
               <div className="space-y-4 mb-8">
-                <div className="flex space-x-4">
-                  <Button size="lg" className="flex-1 bg-primary hover:bg-primary-hover">
-                    <Phone size={20} className="mr-2" />
-                    Solicită Ofertă
-                  </Button>
-                  <Button variant="outline" size="lg">
-                    <Heart size={20} />
-                  </Button>
-                  <Button variant="outline" size="lg">
-                    <Share2 size={20} />
-                  </Button>
-                </div>
-                <Button variant="outline" size="lg" className="w-full">
-                  <Download size={20} className="mr-2" />
-                  Descarcă Broșura PDF
+                <Button size="lg" className="w-full bg-destructive hover:bg-destructive/90 text-white font-semibold">
+                  ADAUGĂ ÎN COȘUL DE OFERTE
                 </Button>
+              </div>
+
+              {/* Downloads Section */}
+              <div className="mb-8">
+                <h3 className="text-sm font-semibold mb-3 text-muted-foreground">Descărcări</h3>
+                <div className="space-y-2">
+                  <button className="flex items-center text-sm hover:text-primary transition-colors">
+                    <Download size={16} className="mr-2" />
+                    <span>FIȘĂ PRODUS</span>
+                  </button>
+                </div>
               </div>
 
               {/* Contact Info */}
