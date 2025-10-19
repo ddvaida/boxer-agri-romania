@@ -991,6 +991,1036 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
     isFeatured: true,
     tags: ['suflător', 'pajiște', 'xl', 'heavy-duty'],
     weight: 225
+  },
+
+  // HYDRAULIC FLAIL MOWERS
+  {
+    id: 'boxer-xfm',
+    name: 'Boxer XFM Cositor Hidraulic cu Ciocanele',
+    nameEn: 'Boxer XFM Hydraulic Flail Mower',
+    description: 'Cositor hidraulic cu ciocanele pentru zone accidentate și terenuri dificile, cu control precis și eficiență ridicată.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 4050,
+    priceRange: '4.050 - 5.200 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Numărul de ciocanele': 48,
+      'Înălțimea de tăiere (mm)': '30-120',
+      'Greutate (kg)': 420
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/2961-XFM%20180-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/2961-XFM%20180-1.png?v=1-2',
+    features: [
+      'Sistem hidraulic pentru control precis',
+      'Ciocanele rezistente la uzură',
+      'Potrivit pentru terenuri accidentate',
+      'Reglare ușoară a înălțimii de tăiere'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '45-65',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'hidraulic', 'ciocanele', 'teren accidentat'],
+    weight: 420
+  },
+
+  {
+    id: 'boxer-kdk',
+    name: 'Boxer KDK Cositor cu Ciocanele',
+    nameEn: 'Boxer KDK Flail Mower',
+    description: 'Cositor cu ciocanele robust pentru tăiere intensivă în condiții dificile, cu sistem de siguranță avansat.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 4450,
+    priceRange: '4.450 - 5.800 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 200,
+      'Numărul de ciocanele': 56,
+      'Înălțimea de tăiere (mm)': '35-130'
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/640-KDK%20%283%29.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/640-KDK%20%283%29.png?v=1-2',
+    features: [
+      'Construcție robustă pentru utilizare intensivă',
+      'Sistem de siguranță cu role de siguranță',
+      'Ciocanele cu montare rapidă',
+      'Ideal pentru vegetație densă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '50-70',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'ciocanele', 'heavy-duty', 'profesional'],
+    weight: 485
+  },
+
+  {
+    id: 'boxer-duo',
+    name: 'Boxer DUO Cositor cu Ciocanele',
+    nameEn: 'Boxer DUO Flail Mowers',
+    description: 'Cositor dublu cu ciocanele pentru productivitate maximă și finisaj uniform pe suprafețe mari.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2750,
+    priceRange: '2.750 - 3.500 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 145,
+      'Numărul de ciocanele': 40
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/531-DUO.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/531-DUO.png?v=1-1',
+    features: [
+      'Sistem dublu pentru productivitate ridicată',
+      'Finisaj uniform al ierbii',
+      'Potrivit pentru suprafețe mari',
+      'Mecanism de siguranță robust'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '40-55',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'duo', 'productivitate', 'suprafețe mari'],
+    weight: 360
+  },
+
+  {
+    id: 'boxer-duo-plus',
+    name: 'Boxer DUO Plus Cositor cu Ciocanele',
+    nameEn: 'Boxer DUO Plus Flail Mower',
+    description: 'Versiunea îmbunătățită a modelului DUO, cu mai multă putere și eficiență pentru exploatații agricole mari.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 6200,
+    priceRange: '6.200 - 7.500 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 220,
+      'Numărul de ciocanele': 68
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/663-Duo%20plus%20uitgesneden.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/663-Duo%20plus%20uitgesneden.png?v=1-2',
+    features: [
+      'Lățime de lucru extinsă',
+      'Sistem dublu îmbunătățit',
+      'Ideal pentru ferme mari',
+      'Construcție profesională robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '60-80',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'duo', 'profesional', 'ferme mari'],
+    weight: 590
+  },
+
+  {
+    id: 'boxer-ag500',
+    name: 'Boxer AG500 Cositor cu Ciocanele',
+    nameEn: 'Boxer AG500 Flail Mower',
+    description: 'Cositor industrial cu ciocanele pentru aplicații agricole de mare anvergură, cu durabilitate excepțională.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 12500,
+    specifications: {
+      'Lățimea de lucru (cm)': 500,
+      'Numărul de ciocanele': 120
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/09/2489-AG500-2.217.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/09/2489-AG500-2.217.jpg?v=1-0',
+    features: [
+      'Lățime industrială de 5 metri',
+      'Construcție extra robustă',
+      'Ideal pentru exploatații mari',
+      'Productivitate maximă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '120-160',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat III'
+    },
+    availability: 'on-order',
+    isFeatured: true,
+    tags: ['cositor', 'industrial', 'exploatații mari', '5m'],
+    weight: 1850
+  },
+
+  {
+    id: 'boxer-efs',
+    name: 'Boxer EFS Cositor cu Ciocanele',
+    nameEn: 'Boxer EFS Flail Mower',
+    description: 'Cositor eficient cu ciocanele pentru întreținerea pajiștilor și a zonelor verzi, cu design compact.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1745,
+    priceRange: '1.745 - 2.200 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 135,
+      'Numărul de ciocanele': 36
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/2295-EFS%20maaier.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/2295-EFS%20maaier.jpg?v=1-0',
+    features: [
+      'Design compact și eficient',
+      'Preț accesibil',
+      'Ideal pentru ferme mici și mijlocii',
+      'Întreținere simplă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-45',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'compact', 'eficient', 'preț accesibil'],
+    weight: 275
+  },
+
+  // OFFSET FLAIL MOWERS
+  {
+    id: 'boxer-agl-mini',
+    name: 'Boxer AGL Mini Cositor Offset',
+    nameEn: 'Boxer AGL Mini Offset Flail Mower',
+    description: 'Cositor compact cu deplasare laterală pentru tăierea vegetației în zone înguste și de-a lungul gardurilor.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2450,
+    priceRange: '2.450 - 3.100 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 110,
+      'Deplasare laterală (cm)': 60
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/2307-agl-mini-%284%2911.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/2307-agl-mini-%284%2911.png?v=1-2',
+    features: [
+      'Deplasare laterală pentru acces îngust',
+      'Compact și manevrabil',
+      'Ideal pentru garduri și margini',
+      'Control precis din cabină'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-45',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'offset', 'compact', 'lateral'],
+    weight: 320
+  },
+
+  {
+    id: 'boxer-agl',
+    name: 'Boxer AGL Cositor Offset',
+    nameEn: 'Boxer AGL Offset Flail Mower',
+    description: 'Cositor cu deplasare laterală pentru lucru eficient pe margini de drumuri și șanțuri.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2570,
+    priceRange: '2.570 - 3.300 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 125,
+      'Deplasare laterală (cm)': 80
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/09/679-AGL%20uitgesneden-2.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/09/679-AGL%20uitgesneden-2.png?v=1-2',
+    features: [
+      'Deplasare laterală extinsă',
+      'Potrivit pentru margini de drumuri',
+      'Sistem hidraulic fiabil',
+      'Finisaj profesional'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'offset', 'margini', 'șanțuri'],
+    weight: 365
+  },
+
+  {
+    id: 'boxer-agf-offset',
+    name: 'Boxer AGF Cositor Offset',
+    nameEn: 'Boxer AGF Offset Flail Mower',
+    description: 'Cositor offset profesional pentru întreținerea marginilor de drumuri și a vegetației pe terenuri înclinate.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 3850,
+    priceRange: '3.850 - 4.800 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 145,
+      'Deplasare laterală (cm)': 100
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/713-AGF220-6.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/713-AGF220-6.png?v=1-2',
+    features: [
+      'Deplasare laterală maximă',
+      'Ideal pentru drumuri și pante',
+      'Construcție robustă',
+      'Control hidraulic precis'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '45-60',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'offset', 'profesional', 'pante'],
+    weight: 450
+  },
+
+  {
+    id: 'boxer-agf-pro',
+    name: 'Boxer AGF Pro Cositor Offset',
+    nameEn: 'Boxer AGF Pro Offset Flail Mower',
+    description: 'Versiunea Pro a cositorului offset AGF, cu caracteristici îmbunătățite și durabilitate superioară.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 4485,
+    priceRange: '4.485 - 5.600 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 160,
+      'Deplasare laterală (cm)': 120
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/726-AGF%20Pro%20uitgesneden-3.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/726-AGF%20Pro%20uitgesneden-3.png?v=1-1',
+    features: [
+      'Versiune Pro cu îmbunătățiri',
+      'Lățime și deplasare extinse',
+      'Construcție premium',
+      'Ideal pentru aplicații profesionale'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '50-70',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'offset', 'pro', 'premium'],
+    weight: 520
+  },
+
+  {
+    id: 'boxer-black',
+    name: 'Boxer Black Cositor Offset',
+    nameEn: 'Boxer Black Offset Flail Mower',
+    description: 'Cositor offset premium din seria Black, cu design modern și performanțe de top pentru lucrări profesionale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 5390,
+    priceRange: '5.390 - 6.800 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Deplasare laterală (cm)': 140
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/2951-Black-1.png?v=1-6'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/2951-Black-1.png?v=1-6',
+    features: [
+      'Design premium Black Series',
+      'Performanțe de top',
+      'Deplasare laterală maximă',
+      'Finisaj profesional exceptional'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '60-80',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'offset', 'black', 'premium'],
+    weight: 620
+  },
+
+  {
+    id: 'boxer-agx',
+    name: 'Boxer AGX Cositor Offset',
+    nameEn: 'Boxer AGX Offset Flail Mower',
+    description: 'Cositor offset de ultimă generație pentru aplicații industriale și profesionale exigente.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 7900,
+    specifications: {
+      'Lățimea de lucru (cm)': 220,
+      'Deplasare laterală (cm)': 180
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/732-AGX.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/732-AGX.png?v=1-2',
+    features: [
+      'Tehnologie de ultimă generație',
+      'Deplasare laterală excepțională',
+      'Pentru aplicații industriale',
+      'Construcție heavy-duty'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '80-100',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II/III'
+    },
+    availability: 'on-order',
+    isFeatured: true,
+    tags: ['cositor', 'offset', 'industrial', 'heavy-duty'],
+    weight: 850
+  },
+
+  // ARM MOWERS
+  {
+    id: 'boxer-am',
+    name: 'Boxer AM Cositor cu Braț',
+    nameEn: 'Boxer AM Arm Mower',
+    description: 'Cositor cu braț articulat pentru tăierea vegetației în zone greu accesibile și pante abrupte.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 5120,
+    priceRange: '5.120 - 6.500 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': '60-80',
+      'Raza de acțiune (m)': 5.5
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/851-AM60-80.png?v=1-3'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/851-AM60-80.png?v=1-3',
+    features: [
+      'Braț articulat hidraulic',
+      'Acces în zone dificile',
+      'Control din cabină',
+      'Versatil și eficient'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '40-60',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II',
+      'Presiune hidraulică (bar)': 180
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'braț', 'articulat', 'zone dificile'],
+    weight: 380
+  },
+
+  {
+    id: 'boxer-am110',
+    name: 'Boxer AM110 Cositor cu Braț',
+    nameEn: 'Boxer AM110 Arm Mower',
+    description: 'Cositor cu braț de 110cm pentru lucrări profesionale de întreținere pe margini și pante.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 7920,
+    priceRange: '7.920 - 9.500 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 110,
+      'Raza de acțiune (m)': 6.5
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/855-AM110%20%284%29.png?v=1-1',
+      'https://www.heustractors.com/uploads/media/product_detail/07/2317-AM110%20klepel.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/855-AM110%20%284%29.png?v=1-1',
+    features: [
+      'Braț profesional 110cm',
+      'Rază de acțiune extinsă',
+      'Sistem hidraulic robust',
+      'Ideal pentru drumuri și pante'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '50-70',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II',
+      'Presiune hidraulică (bar)': 200
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'braț', 'profesional', '110cm'],
+    weight: 520
+  },
+
+  {
+    id: 'boxer-am125-e',
+    name: 'Boxer AM125-E Cositor Electric cu Braț',
+    nameEn: 'Boxer AM125-E Electric Arm Mower',
+    description: 'Cositor cu braț electric de ultimă generație, ecologic și silențios, ideal pentru zone rezidențiale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 13900,
+    specifications: {
+      'Lățimea de lucru (cm)': 125,
+      'Rază de acțiune (m)': 7.0
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/886-AM125-52E-40.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/886-AM125-52E-40.png?v=1-2',
+    features: [
+      'Motor electric silențios',
+      'Zero emisii poluante',
+      'Ideal pentru zone rezidențiale',
+      'Tehnologie de ultimă generație'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': 'Electric',
+      'Tip atașare': 'Trei puncte Cat II',
+      'Presiune hidraulică (bar)': 200
+    },
+    availability: 'on-order',
+    isNew: true,
+    isFeatured: true,
+    tags: ['cositor', 'braț', 'electric', 'ecologic'],
+    weight: 580
+  },
+
+  {
+    id: 'boxer-am130',
+    name: 'Boxer AM130 Cositor cu Braț',
+    nameEn: 'Boxer AM130 Arm Mower',
+    description: 'Cositor cu braț de 130cm pentru aplicații heavy-duty și lucrări profesionale exigente.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 11200,
+    specifications: {
+      'Lățimea de lucru (cm)': 130,
+      'Rază de acțiune (m)': 7.5
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/912-Armmaaier%20130%20uitgesneden-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/912-Armmaaier%20130%20uitgesneden-1.png?v=1-2',
+    features: [
+      'Braț heavy-duty 130cm',
+      'Rază de acțiune maximă',
+      'Construcție industrială',
+      'Pentru lucrări profesionale exigente'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '60-85',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II/III',
+      'Presiune hidraulică (bar)': 220
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cositor', 'braț', 'heavy-duty', '130cm'],
+    weight: 680
+  },
+
+  // HEDGE TRIMMERS
+  {
+    id: 'boxer-hsc',
+    name: 'Boxer HSC Foarfecă de Gard Viu',
+    nameEn: 'Boxer HSC Hedge Trimmer',
+    description: 'Foarfecă profesională pentru tăierea gardurilor vii cu precizie și eficiență ridicată.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 3850,
+    priceRange: '3.850 - 4.800 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Lungimea lamei (cm)': 180
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/972-HSC%20uitgesneden-2.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/972-HSC%20uitgesneden-2.png?v=1-2',
+    features: [
+      'Lame profesionale ascuțite',
+      'Sistem hidraulic de reglare',
+      'Tăiere precisă și curată',
+      'Ideal pentru garduri vii înalte'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-50',
+      'Tip atașare': 'Trei puncte Cat I/II',
+      'Presiune hidraulică (bar)': 180
+    },
+    availability: 'in-stock',
+    tags: ['foarfecă', 'gard viu', 'profesional', 'hidraulic'],
+    weight: 285
+  },
+
+  {
+    id: 'boxer-fhsc',
+    name: 'Boxer FHSC Foarfecă Frontală de Gard Viu',
+    nameEn: 'Boxer FHSC Front Hedge Trimmer',
+    description: 'Foarfecă montată frontal pentru vizibilitate maximă și control precis al tăierii gardurilor.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2950,
+    specifications: {
+      'Lățimea de lucru (cm)': 160,
+      'Lungimea lamei (cm)': 160
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/1663-FTL160-NEW.2-scaled.jpg?v=1-2',
+      'https://www.heustractors.com/uploads/media/product_detail/04/1664-FHSC.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/1663-FTL160-NEW.2-scaled.jpg?v=1-2',
+    features: [
+      'Montare frontală pentru vizibilitate',
+      'Control precis din cabină',
+      'Ideal pentru zone înguste',
+      'Sistem hidraulic eficient'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-45',
+      'Tip atașare': 'Montare frontală',
+      'Presiune hidraulică (bar)': 170
+    },
+    availability: 'in-stock',
+    tags: ['foarfecă', 'frontal', 'vizibilitate', 'control precis'],
+    weight: 235
+  },
+
+  {
+    id: 'boxer-hs',
+    name: 'Boxer HS Foarfecă de Gard Viu',
+    nameEn: 'Boxer HS Hedge Trimmer',
+    description: 'Foarfecă compactă pentru tăierea gardurilor vii mici și mijlocii cu cost redus.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1050,
+    priceRange: '1.050 - 1.500 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Lungimea lamei (cm)': 120
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/04/1674-heggeschaar-600x600.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/04/1674-heggeschaar-600x600.jpg?v=1-0',
+    features: [
+      'Design compact și economic',
+      'Ideal pentru ferme mici',
+      'Întreținere simplă',
+      'Preț accesibil'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-35',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['foarfecă', 'compact', 'economic', 'ferme mici'],
+    weight: 145
+  },
+
+  {
+    id: 'boxer-rm120',
+    name: 'Boxer RM120 Foarfecă de Gard Viu',
+    nameEn: 'Boxer RM120 Hedge Trimmer',
+    description: 'Foarfecă de 120cm pentru întreținerea profesională a gardurilor vii și a vegetației ornamentale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2750,
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Lungimea lamei (cm)': 120
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/1707-RM120-3.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/1707-RM120-3.png?v=1-1',
+    features: [
+      'Lame profesionale de 120cm',
+      'Tăiere precisă și uniformă',
+      'Sistem hidraulic fiabil',
+      'Pentru garduri ornamentale'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-40',
+      'Tip atașare': 'Trei puncte Cat I',
+      'Presiune hidraulică (bar)': 160
+    },
+    availability: 'in-stock',
+    tags: ['foarfecă', 'profesional', 'ornamental', '120cm'],
+    weight: 185
+  },
+
+  {
+    id: 'boxer-cut',
+    name: 'Boxer CUT Cap de Ferăstrău',
+    nameEn: 'Boxer CUT Saw Head',
+    description: 'Cap de ferăstrău pentru tăierea crengilor și a vegetației lemnoase groase.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1875,
+    priceRange: '1.875 - 2.400 EUR',
+    specifications: {
+      'Diametrul maxim tăiat (mm)': 250
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/1693-CUT%205%20uitgesneden-5.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/1693-CUT%205%20uitgesneden-5.png?v=1-1',
+    features: [
+      'Tăiere crengilor groase',
+      'Lamă de ferăstrău durabilă',
+      'Ideal pentru vegetație lemnoasă',
+      'Sistem de siguranță'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-45',
+      'Tip atașare': 'Universală',
+      'Presiune hidraulică (bar)': 180
+    },
+    availability: 'in-stock',
+    tags: ['ferăstrău', 'crengi', 'lemn', 'tăiere'],
+    weight: 165
+  },
+
+  // DISC MOWERS
+  {
+    id: 'boxer-hdm',
+    name: 'Boxer HDM Cositor cu Discuri',
+    nameEn: 'Boxer HDM Disc Mower',
+    description: 'Cositor cu discuri hidraulic pentru cosire rapidă și eficientă a fânului și a ierbii.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2950,
+    specifications: {
+      'Lățimea de lucru (cm)': 165,
+      'Numărul de discuri': 3
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/09/4649-%E5%9B%BE1.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/09/4649-%E5%9B%BE1.jpg?v=1-0',
+    features: [
+      'Cosire rapidă cu discuri',
+      'Sistem hidraulic fiabil',
+      'Ideal pentru fân și iarbă',
+      'Finisaj uniform'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'discuri', 'fân', 'rapid'],
+    weight: 285
+  },
+
+  {
+    id: 'boxer-hdma',
+    name: 'Boxer HDMA Cositor cu Discuri',
+    nameEn: 'Boxer HDMA Disc Mower',
+    description: 'Cositor compact cu discuri pentru ferme mici și mijlocii, eficient și ușor de manevrat.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1275,
+    specifications: {
+      'Lățimea de lucru (cm)': 135,
+      'Numărul de discuri': 2
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/4643-HDMA-03.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/4643-HDMA-03.png?v=1-0',
+    features: [
+      'Design compact',
+      'Preț accesibil',
+      'Ușor de manevrat',
+      'Ideal pentru ferme mici'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'discuri', 'compact', 'ferme mici'],
+    weight: 195
+  },
+
+  // SPECIAL FLAIL MOWERS
+  {
+    id: 'boxer-exf',
+    name: 'Boxer EXF Cositor cu Ciocanele',
+    nameEn: 'Boxer EXF Flail Mower',
+    description: 'Cositor cu ciocanele pentru aplicații speciale și terenuri dificile.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2885,
+    priceRange: '2.885 - 3.600 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 150,
+      'Numărul de ciocanele': 42
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/1711-EXF%20BOXER2.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1711-EXF%20BOXER2.png?v=1-0',
+    features: [
+      'Pentru terenuri dificile',
+      'Ciocanele rezistente',
+      'Versatil și eficient',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '40-55',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'ciocanele', 'terenuri dificile', 'versatil'],
+    weight: 345
+  },
+
+  {
+    id: 'boxer-low',
+    name: 'Boxer LOW Cositor cu Ciocanele Joase',
+    nameEn: 'Boxer LOW Flail Mower',
+    description: 'Cositor cu ciocanele pentru tăiere la înălțime redusă, ideal pentru terenuri de golf și parcuri.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2665,
+    priceRange: '2.665 - 3.400 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 140,
+      'Înălțimea de tăiere (mm)': '15-60'
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/09/2279-LOW%20-20.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/09/2279-LOW%20-20.png?v=1-0',
+    features: [
+      'Tăiere la înălțime joasă',
+      'Ideal pentru terenuri de golf',
+      'Finisaj de calitate premium',
+      'Control precis al înălțimii'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '35-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'joasă', 'golf', 'parcuri'],
+    weight: 305
+  },
+
+  {
+    id: 'boxer-high',
+    name: 'Boxer HIGH Cositor cu Ciocanele Înalte',
+    nameEn: 'Boxer HIGH Flail Mower',
+    description: 'Cositor cu ciocanele pentru vegetație înaltă și densă, cu putere ridicată.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 3440,
+    priceRange: '3.440 - 4.300 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 160,
+      'Înălțimea de tăiere (mm)': '40-150'
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/1167-High.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/1167-High.png?v=1-2',
+    features: [
+      'Pentru vegetație înaltă',
+      'Putere ridicată',
+      'Ciocanele heavy-duty',
+      'Ideal pentru buruieni dense'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '45-60',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'înalt', 'vegetație densă', 'heavy-duty'],
+    weight: 385
+  },
+
+  {
+    id: 'boxer-easy-cut',
+    name: 'Boxer Easy Cut Cositor cu Ciocanele',
+    nameEn: 'Boxer Easy Cut Flail Mower',
+    description: 'Cositor premium cu tehnologie Easy Cut pentru tăiere ușoară și eficientă chiar și a vegetației groase.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 12145,
+    specifications: {
+      'Lățimea de lucru (cm)': 280,
+      'Numărul de ciocanele': 84
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/1160-IA.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/1160-IA.png?v=1-2',
+    features: [
+      'Tehnologie Easy Cut',
+      'Lățime extra large',
+      'Pentru vegetație foarte groasă',
+      'Sistem premium de tăiere'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '90-120',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat III'
+    },
+    availability: 'on-order',
+    isFeatured: true,
+    tags: ['cositor', 'premium', 'easy-cut', 'lățime mare'],
+    weight: 980
+  },
+
+  // OTHER GRASSLAND EQUIPMENT
+  {
+    id: 'boxer-cm',
+    name: 'Boxer CM Cositor Ciclo',
+    nameEn: 'Boxer CM Cyclo Mower',
+    description: 'Cositor ciclo pentru tăiere eficientă și rapidă cu sistem de lame rotative.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 1600,
+    priceRange: '1.600 - 2.100 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 125,
+      'Numărul de lame': 2
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/1172-DSC_0689.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/1172-DSC_0689.png?v=1-0',
+    features: [
+      'Sistem ciclo cu lame rotative',
+      'Tăiere rapidă',
+      'Design simplu și eficient',
+      'Întreținere redusă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'ciclo', 'lame rotative', 'rapid'],
+    weight: 185
+  },
+
+  {
+    id: 'boxer-rbp',
+    name: 'Boxer RBP Balotieră',
+    nameEn: 'Boxer RBP Baler',
+    description: 'Balotieră compactă pentru ferme mici și mijlocii, eficientă în realizarea baloturilor rotunde.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 5765,
+    specifications: {
+      'Diametrul balotului (cm)': 60
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/1608-DSC_0704.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/1608-DSC_0704.png?v=1-2',
+    features: [
+      'Baloturi rotunde compacte',
+      'Ideal pentru ferme mici',
+      'Operare simplă',
+      'Construcție durabilă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-35',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['balotieră', 'baloturi rotunde', 'compact', 'fân'],
+    weight: 295
+  },
+
+  {
+    id: 'boxer-atv',
+    name: 'Boxer ATV Cositor cu Ciocanele pentru ATV',
+    nameEn: 'Boxer ATV Flail Mower',
+    description: 'Cositor cu ciocanele special conceput pentru montare pe ATV-uri și vehicule utilitare mici.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 2300,
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Numărul de ciocanele': 32
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/1211-new%20AT120-11.png?v=1-3'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1211-new%20AT120-11.png?v=1-3',
+    features: [
+      'Montare pe ATV',
+      'Compact și manevrabil',
+      'Ideal pentru terenuri mici',
+      'Ușor de transportat'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-25',
+      'Tip atașare': 'Montare ATV'
+    },
+    availability: 'in-stock',
+    tags: ['cositor', 'atv', 'compact', 'manevrabil'],
+    weight: 125
   }
 ];
 
