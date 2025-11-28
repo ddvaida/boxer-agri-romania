@@ -2021,10 +2021,773 @@ export const grasslandCultivationProducts: DetailedProduct[] = [
     availability: 'in-stock',
     tags: ['cositor', 'atv', 'compact', 'manevrabil'],
     weight: 125
+  },
+
+  // COMBI RAKE - GRAPĂ COMBINATĂ
+  {
+    id: 'boxer-combi-rake',
+    name: 'Boxer Combi Grapă Combinată',
+    nameEn: 'Boxer Combi Rake',
+    description: 'Grapă combinată pentru întreținerea pajiștilor și terenurilor de sport, combinând mai multe funcții într-un singur echipament.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    price: 4150,
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Greutate (kg)': 285
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/1213-HB%20Combi.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/1213-HB%20Combi.png?v=1-1',
+    features: [
+      'Funcții multiple combinate',
+      'Întreținere eficientă a pajiștilor',
+      'Construcție robustă',
+      'Ideal pentru terenuri de sport'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['grapă', 'combinată', 'pajiște', 'sport'],
+    weight: 285
+  },
+
+  // MEADOW DRAG - GRAPĂ PAJIȘTE
+  {
+    id: 'boxer-ws',
+    name: 'Boxer WS Grapă de Pajiște',
+    nameEn: 'Boxer WS Meadow Drag',
+    description: 'Grapă ușoară pentru întreținerea pajiștilor, împrăștierea musuroaielor și aerisirea solului.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'grassland-cultivation',
+    priceFrom: 655,
+    priceRange: '655 - 850 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Greutate (kg)': 45
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/1413-DSC_102011.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/1413-DSC_102011.jpg?v=1-0',
+    features: [
+      'Ușoară și manevrabilă',
+      'Împrăștie musuroaiele',
+      'Aerisează solul',
+      'Preț accesibil'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-25',
+      'Tip atașare': 'Trei puncte Cat 0/I'
+    },
+    availability: 'in-stock',
+    tags: ['grapă', 'pajiște', 'aerisire', 'compact'],
+    weight: 45
+  },
+
+  // TRENCHER - EXCAVATOR CANALE
+  {
+    id: 'boxer-d-0',
+    name: 'Boxer D-0 Excavator de Canale',
+    nameEn: 'Boxer D-0 Trencher',
+    description: 'Excavator de canale pentru instalarea conductelor, cablurilor și sistemelor de irigații.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 4950,
+    priceRange: '4.950 - 5.800 EUR',
+    specifications: {
+      'Adâncimea maximă (cm)': 60,
+      'Lățimea canalului (cm)': 15,
+      'Greutate (kg)': 420
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/1381-D02%20%282%29.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/1381-D02%20%282%29.png?v=1-2',
+    features: [
+      'Săpare canale precise',
+      'Ideal pentru conducte și cabluri',
+      'Sistem hidraulic eficient',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '30-50',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['excavator', 'canale', 'conducte', 'irigații'],
+    weight: 420
+  },
+
+  // LANDLEVELLERS - NIVELATOR TEREN
+  {
+    id: 'boxer-ll',
+    name: 'Boxer LL Nivelator de Teren',
+    nameEn: 'Boxer LL Landlevellers',
+    description: 'Nivelator de teren pentru pregătirea suprafețelor plane și uniforme.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 1785,
+    priceRange: '1.785 - 2.200 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 200,
+      'Greutate (kg)': 185
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/1403-land%20level-.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/1403-land%20level-.png?v=1-0',
+    features: [
+      'Nivelare precisă',
+      'Suprafețe uniforme',
+      'Reglare ușoară',
+      'Construcție durabilă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '20-35',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['nivelator', 'teren', 'suprafață', 'uniform'],
+    weight: 185
+  },
+
+  // BOTTOM FLATTER EE - NIVELATOR ATV
+  {
+    id: 'boxer-ee',
+    name: 'Boxer EE Nivelator pentru ATV',
+    nameEn: 'Boxer Bottom Flatter EE (ATV)',
+    description: 'Nivelator compact pentru ATV și vehicule mici, ideal pentru terenuri de sport și grădini.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 1120,
+    priceRange: '1.120 - 1.450 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 120,
+      'Greutate (kg)': 65
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/1435-ee%20uitges.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/1435-ee%20uitges.jpg?v=1-0',
+    features: [
+      'Compact pentru ATV',
+      'Ideal pentru terenuri sport',
+      'Manevrabilitate excelentă',
+      'Preț accesibil'
+    ],
+    technicalData: {
+      'Tip atașare': 'Cârlig ATV'
+    },
+    availability: 'in-stock',
+    tags: ['nivelator', 'atv', 'compact', 'sport'],
+    weight: 65
+  },
+
+  // PISTE PROFI - NIVELATOR SOL
+  {
+    id: 'boxer-piste-profi',
+    name: 'Boxer Piste Profi Nivelator de Sol',
+    nameEn: 'Boxer Piste Profi Soil Leveler',
+    description: 'Nivelator profesional pentru sol, perfect pentru terenuri de sport și pajiști.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'soil-cultivation',
+    priceFrom: 2395,
+    priceRange: '2.395 - 2.900 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Greutate (kg)': 165
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/2260-PISTE%20PROFI%20%284%29.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/2260-PISTE%20PROFI%20%284%29.png?v=1-0',
+    features: [
+      'Finisaj profesional',
+      'Ideal pentru terenuri de sport',
+      'Nivelare precisă',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['nivelator', 'profesional', 'sport', 'pajiște'],
+    weight: 165
+  },
+
+  // SNOW PLOUGHS - PLUGURI DE ZĂPADĂ
+  {
+    id: 'boxer-ss',
+    name: 'Boxer SS Plug de Zăpadă',
+    nameEn: 'Boxer SS Snow Plough',
+    description: 'Plug de zăpadă compact pentru tractoare mici și utilaje compacte.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 1475,
+    priceRange: '1.475 - 1.850 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 150,
+      'Greutate (kg)': 125
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/06/2096-SS%20uitgesneden-6.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/06/2096-SS%20uitgesneden-6.png?v=1-0',
+    features: [
+      'Compact și eficient',
+      'Deszăpezire rapidă',
+      'Unghi de lucru reglabil',
+      'Montare ușoară'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '15-30',
+      'Tip atașare': 'Trei puncte Cat 0/I'
+    },
+    availability: 'in-stock',
+    tags: ['plug', 'zăpadă', 'deszăpezire', 'iarnă'],
+    weight: 125
+  },
+
+  {
+    id: 'boxer-pu-2600',
+    name: 'Boxer PU 2600 Plug de Zăpadă',
+    nameEn: 'Boxer PU 2600 Snow Plough',
+    description: 'Plug de zăpadă profesional de 2.6m pentru deszăpezirea rapidă a drumurilor.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    price: 4350,
+    specifications: {
+      'Lățimea de lucru (cm)': 260,
+      'Greutate (kg)': 285
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/2101-pu%20uitges.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/2101-pu%20uitges.png?v=1-0',
+    features: [
+      'Lățime profesională 2.6m',
+      'Deszăpezire eficientă',
+      'Construcție heavy-duty',
+      'Unghi hidraulic'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '40-60',
+      'Tip atașare': 'Trei puncte Cat I/II'
+    },
+    availability: 'in-stock',
+    tags: ['plug', 'zăpadă', 'profesional', 'drumuri'],
+    weight: 285
+  },
+
+  {
+    id: 'boxer-puv',
+    name: 'Boxer PUV Plug de Zăpadă V',
+    nameEn: 'Boxer PUV Snow Plough',
+    description: 'Plug de zăpadă în formă de V pentru deszăpezirea eficientă în ambele direcții.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    price: 5325,
+    specifications: {
+      'Lățimea de lucru (cm)': 280,
+      'Greutate (kg)': 320
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/2103-PUV%20%281%29.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/2103-PUV%20%281%29.png?v=1-0',
+    features: [
+      'Design în V pentru eficiență',
+      'Deszăpezire bidirecțională',
+      'Control hidraulic',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '50-70',
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    tags: ['plug', 'zăpadă', 'v-shape', 'bidirecțional'],
+    weight: 320
+  },
+
+  {
+    id: 'boxer-ssv',
+    name: 'Boxer SSV Plug de Zăpadă',
+    nameEn: 'Boxer SSV Snow Plough',
+    description: 'Plug de zăpadă versatil cu lamă reglabilă pentru diverse aplicații de deszăpezire.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 2550,
+    priceRange: '2.550 - 3.100 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Greutate (kg)': 165
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/2105-SSV%20%281%29.png?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/2105-SSV%20%281%29.png?v=1-0',
+    features: [
+      'Lamă reglabilă',
+      'Versatilitate maximă',
+      'Deszăpezire eficientă',
+      'Construcție durabilă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-45',
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['plug', 'zăpadă', 'versatil', 'reglabil'],
+    weight: 165
+  },
+
+  // SWEEPERS - MĂTURI
+  {
+    id: 'boxer-vm',
+    name: 'Boxer VM Mătură Mecanică',
+    nameEn: 'Boxer VM Sweeper',
+    description: 'Mătură mecanică pentru curățarea drumurilor, curților și spațiilor industriale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 2535,
+    priceRange: '2.535 - 3.100 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 180,
+      'Greutate (kg)': 185
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/2160-VM%20%282%29.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/2160-VM%20%282%29.png?v=1-2',
+    features: [
+      'Curățare eficientă',
+      'Perie rotativă robustă',
+      'Colectare opțională',
+      'Construcție durabilă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '25-40',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['mătură', 'curățare', 'drumuri', 'curți'],
+    weight: 185
+  },
+
+  {
+    id: 'boxer-vm-xl',
+    name: 'Boxer VM XL Mătură Mecanică',
+    nameEn: 'Boxer VM XL Sweeper',
+    description: 'Mătură mecanică de mari dimensiuni pentru curățarea rapidă a suprafețelor mari.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 6480,
+    priceRange: '6.480 - 7.500 EUR',
+    specifications: {
+      'Lățimea de lucru (cm)': 290,
+      'Greutate (kg)': 385
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/03/2293-VM290-XL-5.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/03/2293-VM290-XL-5.png?v=1-2',
+    features: [
+      'Lățime XL 2.9m',
+      'Productivitate maximă',
+      'Perie profesională',
+      'Construcție heavy-duty'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '45-70',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat II'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['mătură', 'xl', 'profesional', 'curățare'],
+    weight: 385
+  },
+
+  // WEED BRUSH - PERIE PENTRU BURUIENI
+  {
+    id: 'boxer-ob',
+    name: 'Boxer OB Perie pentru Buruieni',
+    nameEn: 'Boxer OB Weed Brush',
+    description: 'Perie specială pentru îndepărtarea buruienilor de pe pavaje și alei, fără chimicale.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    price: 2820,
+    specifications: {
+      'Lățimea de lucru (cm)': 70,
+      'Greutate (kg)': 95
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/2257-OB70%201.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/2257-OB70%201.jpg?v=1-0',
+    features: [
+      'Îndepărtare ecologică buruieni',
+      'Fără chimicale',
+      'Ideal pentru pavaje',
+      'Perie rotativă eficientă'
+    ],
+    technicalData: {
+      'Putere necesară (CP)': '20-35',
+      'Viteză PTO (RPM)': 540,
+      'Tip atașare': 'Trei puncte Cat I'
+    },
+    availability: 'in-stock',
+    tags: ['perie', 'buruieni', 'ecologic', 'pavaje'],
+    weight: 95
+  },
+
+  // ATTACHMENTS - ACCESORII
+  {
+    id: 'boxer-w-pb',
+    name: 'Boxer W PB Cupă pentru Moloz',
+    nameEn: 'Boxer W PB Rubble Bucket',
+    description: 'Cupă robustă pentru manipularea molozului, pietrelor și materialelor de construcție.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 1160,
+    priceRange: '1.160 - 1.450 EUR',
+    specifications: {
+      'Capacitate (L)': 400,
+      'Lățime (cm)': 150,
+      'Greutate (kg)': 145
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/05/4475-stone%20bucket%20%281%29.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/05/4475-stone%20bucket%20%281%29.png?v=1-1',
+    features: [
+      'Construcție robustă',
+      'Ideal pentru moloz',
+      'Manipulare pietre',
+      'Durabilitate sporită'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal'
+    },
+    availability: 'in-stock',
+    tags: ['cupă', 'moloz', 'pietre', 'construcții'],
+    weight: 145
+  },
+
+  {
+    id: 'boxer-tr',
+    name: 'Boxer TR Furcă pentru Dale',
+    nameEn: 'Boxer TR Tiling Fork',
+    description: 'Furcă specială pentru manipularea dalelor de pavaj și materialelor de construcție.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 1055,
+    priceRange: '1.055 - 1.300 EUR',
+    specifications: {
+      'Lățime (cm)': 120,
+      'Greutate (kg)': 85
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/4478-stone%20fork-.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/4478-stone%20fork-.png?v=1-1',
+    features: [
+      'Ideal pentru dale',
+      'Manipulare sigură',
+      'Construcție solidă',
+      'Versatilitate'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal'
+    },
+    availability: 'in-stock',
+    tags: ['furcă', 'dale', 'pavaj', 'construcții'],
+    weight: 85
+  },
+
+  {
+    id: 'boxer-4-in-1',
+    name: 'Boxer 4 în 1 Cupă Multifuncțională',
+    nameEn: 'Boxer 4 in 1 Box',
+    description: 'Cupă multifuncțională 4 în 1 pentru diverse aplicații: încărcare, nivelare, prindere și distribuire.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 1220,
+    priceRange: '1.220 - 1.550 EUR',
+    specifications: {
+      'Capacitate (L)': 350,
+      'Lățime (cm)': 140,
+      'Greutate (kg)': 165
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/08/4488-4-1%20FT.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/08/4488-4-1%20FT.png?v=1-2',
+    features: [
+      '4 funcții în 1',
+      'Încărcare și nivelare',
+      'Prindere și distribuire',
+      'Versatilitate maximă'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['cupă', 'multifuncțional', '4-în-1', 'versatil'],
+    weight: 165
+  },
+
+  {
+    id: 'boxer-mg',
+    name: 'Boxer MG Furcă pentru Gunoi',
+    nameEn: 'Boxer MG Manure Fork',
+    description: 'Furcă robustă pentru manipularea gunoiului de grajd și materialelor agricole.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    price: 1725,
+    specifications: {
+      'Lățime (cm)': 180,
+      'Greutate (kg)': 145
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/04/4504-Mestklem%20uitgeknipt.png?v=1-1'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/04/4504-Mestklem%20uitgeknipt.png?v=1-1',
+    features: [
+      'Manipulare eficientă gunoi',
+      'Construcție robustă',
+      'Deschidere hidraulică',
+      'Durabilitate sporită'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal'
+    },
+    availability: 'in-stock',
+    tags: ['furcă', 'gunoi', 'agricol', 'manipulare'],
+    weight: 145
+  },
+
+  {
+    id: 'boxer-bk',
+    name: 'Boxer BK Cupă de Beton',
+    nameEn: 'Boxer BK Concrete Bucket',
+    description: 'Cupă specială pentru turnarea betonului în locuri greu accesibile.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    price: 1125,
+    specifications: {
+      'Capacitate (L)': 250,
+      'Greutate (kg)': 95
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/4507-Boxer%20bk.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/4507-Boxer%20bk.png?v=1-2',
+    features: [
+      'Turnare precisă beton',
+      'Acces în spații înguste',
+      'Descărcare controlată',
+      'Construcție rezistentă'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal'
+    },
+    availability: 'in-stock',
+    tags: ['cupă', 'beton', 'turnare', 'construcții'],
+    weight: 95
+  },
+
+  {
+    id: 'boxer-bkv',
+    name: 'Boxer BKV Cupă de Beton cu Vibrator',
+    nameEn: 'Boxer BKV Concrete Bucket with Vibrator',
+    description: 'Cupă de beton cu vibrator integrat pentru turnare uniformă și compactare eficientă.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    price: 1675,
+    specifications: {
+      'Capacitate (L)': 300,
+      'Greutate (kg)': 125
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/4510-BKV%20uitgeknipt-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/4510-BKV%20uitgeknipt-1.png?v=1-2',
+    features: [
+      'Vibrator integrat',
+      'Compactare eficientă',
+      'Turnare uniformă',
+      'Construcție profesională'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal'
+    },
+    availability: 'in-stock',
+    tags: ['cupă', 'beton', 'vibrator', 'profesional'],
+    weight: 125
+  },
+
+  {
+    id: 'boxer-pb',
+    name: 'Boxer PB Graifăr pentru Siloz',
+    nameEn: 'Boxer PB Silage Grab',
+    description: 'Graifăr pentru manipularea silozului, fanului și materialelor agricole.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 1785,
+    priceRange: '1.785 - 2.200 EUR',
+    specifications: {
+      'Capacitate (m³)': 1.2,
+      'Lățime (cm)': 180,
+      'Greutate (kg)': 195
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/02/4522-Pelikaanbak%20uitgeknipt-1.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/02/4522-Pelikaanbak%20uitgeknipt-1.png?v=1-2',
+    features: [
+      'Manipulare siloz eficientă',
+      'Capacitate mare',
+      'Prindere sigură',
+      'Construcție robustă'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal'
+    },
+    availability: 'in-stock',
+    tags: ['graifăr', 'siloz', 'fân', 'agricol'],
+    weight: 195
+  },
+
+  {
+    id: 'boxer-hk',
+    name: 'Boxer HK Clemă pentru Lemn',
+    nameEn: 'Boxer HK Wood Clamp',
+    description: 'Clemă pentru manipularea buștenilor și materialelor lemnoase.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    price: 1465,
+    specifications: {
+      'Deschidere maximă (cm)': 120,
+      'Greutate (kg)': 125
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/01/4541-logging%20grapple.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/01/4541-logging%20grapple.png?v=1-2',
+    features: [
+      'Manipulare bușteni',
+      'Prindere sigură',
+      'Construcție forestieră',
+      'Durabilitate sporită'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal'
+    },
+    availability: 'in-stock',
+    tags: ['clemă', 'lemn', 'bușteni', 'forestier'],
+    weight: 125
+  },
+
+  {
+    id: 'boxer-rhk',
+    name: 'Boxer RHK Clemă pentru Lemn cu Rotator',
+    nameEn: 'Boxer RHK Timber Clamp with Rotator',
+    description: 'Clemă pentru lemn cu rotator hidraulic pentru manipulare precisă a buștenilor.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    price: 2950,
+    specifications: {
+      'Deschidere maximă (cm)': 140,
+      'Rotație (grade)': 360,
+      'Greutate (kg)': 185
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/00/2930-RLG61%20pic2.jpg?v=1-0'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/00/2930-RLG61%20pic2.jpg?v=1-0',
+    features: [
+      'Rotator hidraulic 360°',
+      'Manipulare precisă',
+      'Prindere sigură',
+      'Versatilitate maximă'
+    ],
+    technicalData: {
+      'Tip atașare': 'Încărcător frontal / Excavator'
+    },
+    availability: 'in-stock',
+    isFeatured: true,
+    tags: ['clemă', 'lemn', 'rotator', 'hidraulic'],
+    weight: 185
+  },
+
+  {
+    id: 'boxer-hh',
+    name: 'Boxer HH Ciocan de Demolare',
+    nameEn: 'Boxer HH Demolition Hammer',
+    description: 'Ciocan hidraulic de demolare pentru lucrări de construcții și demontări.',
+    brand: 'Boxer',
+    category: 'agricultural-machinery',
+    subcategory: 'attachments',
+    priceFrom: 3850,
+    priceRange: '3.850 - 4.800 EUR',
+    specifications: {
+      'Energie de impact (J)': 450,
+      'Greutate (kg)': 285
+    },
+    images: [
+      'https://www.heustractors.com/uploads/media/product_list/07/4547-Boxer%20Hamer%20klein-03.png?v=1-2'
+    ],
+    mainImage: 'https://www.heustractors.com/uploads/media/product_list/07/4547-Boxer%20Hamer%20klein-03.png?v=1-2',
+    features: [
+      'Putere de impact ridicată',
+      'Demolare eficientă',
+      'Construcție robustă',
+      'Sistem hidraulic fiabil'
+    ],
+    technicalData: {
+      'Presiune hidraulică (bar)': 150,
+      'Debit hidraulic (L/min)': 50,
+      'Tip atașare': 'Excavator'
+    },
+    availability: 'in-stock',
+    tags: ['ciocan', 'demolare', 'hidraulic', 'construcții'],
+    weight: 285
   }
 ];
 
-// PRELUCRAREA SOLULUI - Soil Cultivation Products  
+// PRELUCRAREA SOLULUI - Soil Cultivation Products
 export const soilCultivationProducts: DetailedProduct[] = [
   // FREZE ROTATIVE - ROTARY TILLERS
   {
